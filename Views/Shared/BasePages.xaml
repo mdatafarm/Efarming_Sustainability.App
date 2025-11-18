@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Efarming_Sustainability.App.Views.Shared.BasePages">
+
+    <Grid BackgroundColor="#2E7D32" Padding="10,30,10,10" HeightRequest="63"
+          ColumnDefinitions="Auto,*,Auto">
+
+        <!-- Home icon -->
+
+
+        <!-- Title -->
+        <Label Grid.Column="1"
+               Text="{Binding Title}"
+               TextColor="White"
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <!-- Logout icon -->
+        <!--<ImageButton 
+            Grid.Column="2"
+            Source="logout.png"
+            BackgroundColor="Transparent"
+            WidthRequest="30"
+            HeightRequest="30"
+            Clicked="OnLogoutClicked"
+            HorizontalOptions="End"
+            VerticalOptions="Center" />-->
+    </Grid>
+</ContentView>

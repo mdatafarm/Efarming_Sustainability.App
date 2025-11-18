@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             x:Class="Efarming_Sustainability.App.Views.IndicatorsPage"
+             
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CardFrameStyle" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="16" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="18" />
+                <Setter Property="BackgroundColor" Value="#F6EEF6" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="HeightRequest" Value="220" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+
+            <Style x:Key="CardNumberLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="#222" />
+            </Style>
+
+
+            <Style x:Key="CardTextLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="#333" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="Auto, *" ColumnDefinitions="*">
+        <!-- Top black bar with logo -->
+        <shared:BasePages Grid.Row="0" Title="Dashboard" />
+
+
+        <!-- Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="24" Padding="24" HorizontalOptions="Center" WidthRequest="820">
+
+ <!--<Label Text="Dashboard" FontSize="36" FontAttributes="Bold" HorizontalOptions="Center" />-->
+
+
+              
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12" HorizontalOptions="Center">
+
+
+                   
+                    <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource CardFrameStyle}">
+                        <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                            <Image Source="farm_color.png" HeightRequest="64" WidthRequest="64" />
+                            <Label Text="{Binding AssociatedPeopleCount}" Style="{StaticResource CardNumberLabel}" />
+                            <Label Text="Fincas&#10;Asignadas" Style="{StaticResource CardTextLabel}" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+
+                    <!-- Card 2 -->
+                    <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource CardFrameStyle}">
+                        <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                            <Image Source="farmvisited.png" HeightRequest="64" WidthRequest="64" />
+                            <Label Text="{Binding SustainabilityContactsCount}" Style="{StaticResource CardNumberLabel}" />
+                            <Label Text="Fincas&#10;Visitadas" Style="{StaticResource CardTextLabel}" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+
+                    <!-- Card 3 -->
+                    <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource CardFrameStyle}">
+                        <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                            <Image Source="contacts.png" HeightRequest="64" WidthRequest="64" />
+                            <Label Text="{Binding ContactsLastWeek}" Style="{StaticResource CardNumberLabel}" />
+                            <Label Text="Contactos&#10; Realizados" Style="{StaticResource CardTextLabel}" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+
+                    <!-- Card 4 -->
+                    <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource CardFrameStyle}">
+                        <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                            <Image Source="encuestas.png" HeightRequest="64" WidthRequest="64" />
+                            <Label Text="{Binding SurveysDone}" Style="{StaticResource CardNumberLabel}" />
+                            <Label Text="Encuestas&#10;Realizadas" Style="{StaticResource CardTextLabel}" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+
+                </Grid>
+
+
+                
+                <Button Text="Buscar Fincas" 
+                        CornerRadius="14" 
+                        HeightRequest="48" 
+                        BackgroundColor="#3CB371"
+                        TextColor="White" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="300"
+                        Clicked="OnStartClicked"/>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+
+    </Grid>
+</ContentPage>
