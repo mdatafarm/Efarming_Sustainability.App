@@ -64,10 +64,10 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             }
         }
 
-        public async Task SaveFarmsLocally(List<FarmLocal> farms)
+        public async Task SaveFarmsLocally(List<Farms> farms)
         {
             await InitializeAsync();
-            await _db.DeleteAllAsync<FarmLocal>();
+            await _db.DeleteAllAsync<Farms>();
             await _db.InsertAllAsync(farms);
         }
 

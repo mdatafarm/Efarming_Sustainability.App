@@ -18,6 +18,7 @@
           "Microsoft.Maui.Controls": "9.0.120",
           "Microsoft.Maui.Controls.Compatibility": "9.0.120",
           "Newtonsoft.Json": "13.0.4",
+          "Refractored.MvvmHelpers": "1.6.2",
           "SQLitePCLRaw.bundle_green": "2.1.11",
           "SkiaSharp.Views.Maui.Controls": "3.119.1",
           "ZXing.Net.Maui": "0.6.0",
@@ -808,6 +809,17 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -1072,6 +1084,7 @@
       },
       "System.Security.Principal.Windows/4.7.0": {},
       "System.Text.Json/9.0.5": {},
+      "System.ValueTuple/4.5.0": {},
       "ZXing.Net/0.16.10": {
         "runtime": {
           "lib/net9.0/zxing.dll": {
@@ -1480,6 +1493,13 @@
       "path": "newtonsoft.json/13.0.4",
       "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
     },
+    "Refractored.MvvmHelpers/1.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pXiyT0ad3QI7IzZSSjVNliyhyyAe7lmNPdfAEgSrtjhF9twrYoKbBlTd58IJc67Fw8QmHEur8F9eBA4rj+BZAg==",
+      "path": "refractored.mvvmhelpers/1.6.2",
+      "hashPath": "refractored.mvvmhelpers.1.6.2.nupkg.sha512"
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1703,6 +1723,13 @@
       "sha512": "sha512-rnP61ZfloTgPQPe7ecr36loNiGX3g1PocxlKHdY/FUpDSsExKkTxpMAlB4X35wNEPr1X7mkYZuQvW3Lhxmu7KA==",
       "path": "system.text.json/9.0.5",
       "hashPath": "system.text.json.9.0.5.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "ZXing.Net/0.16.10": {
       "type": "package",

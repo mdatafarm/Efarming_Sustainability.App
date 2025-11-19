@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Efarming_Sustainability.App.Views.Farm;
 
 namespace Efarming_Sustainability.App.Views.Farms
 {
@@ -41,7 +42,7 @@ namespace Efarming_Sustainability.App.Views.Farms
             dptPicker.SelectedIndexChanged += DptPicker_SelectedIndexChanged;
             mcppicker.SelectedIndexChanged += McpPicker_SelectedIndexChanged;
 
-            _viewModel = new FarmsViewModel(new FarmsRepository());
+            _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository());
             BindingContext = _viewModel;
         }
 
@@ -179,6 +180,10 @@ namespace Efarming_Sustainability.App.Views.Farms
             }
         }
 
+        private async void OnFarmListClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DownloadFarms());
+        }
 
     }
 }

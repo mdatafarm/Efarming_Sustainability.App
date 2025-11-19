@@ -9,21 +9,26 @@ using System.Threading.Tasks;
 
 namespace Efarming_Sustainability.App.Models_View
 {
-    class FarmsViewModel
+    public class FarmsViewModel
     {
         private readonly FarmsRepository _farmsRepository;
+        private readonly IAlert _alert;
 
-        
+
         private ObservableCollection<Farms> _items;
         private string? _code;
-       
-        public FarmsViewModel(FarmsRepository farmsRepository)
-        {
-            
-            _farmsRepository = farmsRepository ?? throw new ArgumentNullException(nameof(farmsRepository));
 
-            
+
+
+        public FarmsViewModel(FarmsRepository farmsRepository, IAlert alert)
+        {
+
+            _farmsRepository = farmsRepository;
+
+
             _items = new ObservableCollection<Farms>();
+
+            _alert = alert;
         }
 
         public string? Code
@@ -47,7 +52,6 @@ namespace Efarming_Sustainability.App.Models_View
         public DateTime? UpdatedAt { get; set; }
         public Guid Id { get; set; }
         public Guid VillageId { get; set; }
-        public DbGeography? Geolocation { get; set; }
         public Guid? FarmSubstatusId { get; set; }
         public Guid? CooperativeId { get; set; }
         public Guid? OwnershipTypeId { get; set; }
@@ -85,7 +89,7 @@ namespace Efarming_Sustainability.App.Models_View
 
             try
             {
-                var farmLocal = new FarmLocal
+                var farmLocal = new Farms
                 {
                     Id = farm.Id,
                     Name = farm.Name,
@@ -105,18 +109,38 @@ namespace Efarming_Sustainability.App.Models_View
                 };
 
 
-                await _farmsRepository.SaveFarmsLocally(new List<FarmLocal> { farmLocal });
+                await _farmsRepository.SaveFarmsLocally(new List<Farms> { farm });
 
-               
-                await Shell.Current.DisplayAlert("Descarga", $"Finca '{farm.Name}' ({farm.Code}) descargada correctamente.", "OK");
+
+                await _alert.ShowAlert("Descarga", $"Finca '{farm.Name}' descargada.", "OK");
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error al descargar finca localmente: {ex.Message}");
-                await Shell.Current.DisplayAlert("Error de Descarga", $"No se pudo guardar la finca localmente: {ex.Message}", "OK");
+
+                
+                if (Shell.Current != null)
+                {
+                    await Shell.Current.DisplayAlert("Error de Descarga", $"No se pudo guardar la finca localmente: {ex.Message}", "OK");
+                }
+                else
+                {
+                   
+                    Console.WriteLine($"ERROR: {ex.Message} (Fallo al mostrar DisplayAlert porque Shell.Current es null)");
+                }
             }
         }
 
+        public async Task GetLocalFarms()
+        {
+            _items.Clear();
+            var farms = await _farmsRepository.GetLocalFarms();
+
+            foreach(var farm in farms)
+            {
+                _items.Add(farm);
+            }
+        }
 
 
         public async Task<int> UpdateFarmLocalAsync(Farms farm)

@@ -48,11 +48,11 @@
                     </Grid>
                 </CollectionView.Header>
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="10" ColumnDefinitions="*,2*,Auto" BackgroundColor="White" Margin="0, 0, 0, 1">
-                            <Label Grid.Column="0" Text="{Binding Code}" TextColor="Black"/>
-                            <Label Grid.Column="1" Text="{Binding Name}" TextColor="Black"/>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10" ColumnDefinitions="*,2*,Auto" BackgroundColor="White" Margin="0, 0, 0, 1">
+                                <Label Grid.Column="0" Text="{Binding Code}" TextColor="Black"/>
+                                <Label Grid.Column="1" Text="{Binding Name}" TextColor="Black"/>
                                 <HorizontalStackLayout Grid.Column="2" Spacing="5" VerticalOptions="Center">
                                     <Button Text="Descargar" 
                                         WidthRequest="80" 
@@ -62,21 +62,26 @@
                                         TextColor="White"
                                         CornerRadius="5"
                                         Clicked="OnDownloadFarmClicked"
-                                        CommandParameter="{Binding}"/>     
+                                        CommandParameter="{Binding}"/>
 
                                 </HorizontalStackLayout>
                             </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.EmptyView>
+                        <Label Text="No se encontraron fincas con los criterios de búsqueda." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </CollectionView.EmptyView>
+                </CollectionView>
 
-                <CollectionView.EmptyView>
-                    <Label Text="No se encontraron fincas con los criterios de búsqueda." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
-                </CollectionView.EmptyView>
-
-            </CollectionView>
-
-
-        </VerticalStackLayout>
+                <Button Text="Fincas descargadas"
+                 WidthRequest="120" 
+                 HeightRequest="35"
+                 FontSize="10"
+                 BackgroundColor="#2E7D32" 
+                 TextColor="White"
+                 CornerRadius="5"
+                 Clicked="OnFarmListClicked"/>
+            </VerticalStackLayout>
         </ScrollView>
     </Grid>
 </ContentPage>

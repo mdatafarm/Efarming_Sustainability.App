@@ -1,4 +1,6 @@
 ﻿using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
+using Efarming_Sustainability.App.Models_View;
+using Efarming_Sustainability.Core.Interfaces;
 using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 using SkiaSharp.Views.Maui.Controls.Hosting;
@@ -36,6 +38,18 @@ namespace Efarming_Sustainability.App
             builder.Services.AddSingleton<PlantationVarietiesRepository>();
             builder.Services.AddSingleton<SupplyChainsRepository>();
             builder.Services.AddSingleton<FarmsRepository>();
+
+
+            //Registro de los viewmodels
+
+            builder.Services.AddSingleton<FarmsViewModel>();
+            builder.Services.AddTransient<LocalFarmsViewModel>();
+
+
+            //Registros de servicios
+
+            builder.Services.AddSingleton<IAlert, AlertRepository>();
+
             return builder.Build();
         }
     }

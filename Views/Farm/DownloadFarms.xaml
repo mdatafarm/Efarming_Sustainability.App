@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             xmlns:viewmodels="clr-namespace:Efarming_Sustainability.App.Models_View"
+             x:Class="Efarming_Sustainability.App.Views.Farm.DownloadFarms"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+
+    
+    
+    <Grid RowDefinitions="Auto,*">
+        <shared:BasePages Grid.Row="0" Title="Fincas Descargadas"/>
+        
+            <ScrollView Grid.Row="1">
+            <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
+
+                <BoxView HeightRequest="20" Color="LightGray"  Margin="0, 10, 0, 10"/>
+
+                <CollectionView ItemsSource="{Binding LocalFarms}">
+                    
+                    <CollectionView.Header>
+                        <Grid Padding="10" ColumnDefinitions="*,2*,Auto" BackgroundColor="#388E3C">
+                            <Label Grid.Column="0" Text="CÓDIGO" FontAttributes="Bold" TextColor="White"/>
+                            <Label Grid.Column="1" Text="NOMBRE" FontAttributes="Bold" TextColor="White"/>
+                            <Label Grid.Column="2" Text="ACCIONES" FontAttributes="Bold" TextColor="White"/>
+                        </Grid>
+                    </CollectionView.Header>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid Padding="10" ColumnDefinitions="*,2*,Auto" BackgroundColor="White" Margin="0, 0, 0, 1">
+
+                                <Label Grid.Column="0"
+                                   Text="{Binding Code}"
+                                   FontAttributes="Bold" />
+
+                                    <Label Grid.Column="1"
+                                   Text="{Binding Name}" />
+                                    <HorizontalStackLayout Grid.Column="2" Spacing="5" VerticalOptions="Center">
+                                    <Button Grid.Column="2"
+                                        Text="Editar"
+                                        BackgroundColor="#2E7D32" 
+                                        TextColor="White"
+                                        CornerRadius="5"    
+                                        Command="{Binding BindingContext.EditFarmCommand, Source={x:Reference LocalPage}}"
+                                        CommandParameter="{Binding}" />
+                                </HorizontalStackLayout>
+                                </Grid>
+                            
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>  
+        </ScrollView>
+    </Grid>
+</ContentPage>

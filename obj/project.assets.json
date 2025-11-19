@@ -891,6 +891,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -1285,6 +1301,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -4270,6 +4295,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -4625,6 +4666,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -7610,6 +7660,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -7965,6 +8031,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -10950,6 +11025,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -11302,6 +11393,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -14287,6 +14387,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -14639,6 +14755,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -17626,6 +17751,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "SkiaSharp/3.119.1": {
         "type": "package",
         "dependencies": {
@@ -17976,6 +18117,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Glide/4.16.0.12": {
@@ -20992,6 +21142,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -21453,6 +21619,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -22368,6 +22543,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -22743,6 +22934,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -23658,6 +23858,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -24033,6 +24249,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -24948,6 +25173,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -25328,6 +25569,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -26243,6 +26493,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -26623,6 +26889,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -27541,6 +27816,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -27920,6 +28211,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -28872,6 +29172,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -29446,6 +29762,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -30362,6 +30687,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -30779,6 +31120,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -31695,6 +32045,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -32112,6 +32478,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -33028,6 +33403,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -33442,6 +33833,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -34358,6 +34758,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -34778,6 +35194,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -35697,6 +36122,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -36118,6 +36559,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -37321,6 +37771,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -37989,6 +38455,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -39094,6 +39569,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -39535,6 +40026,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -40640,6 +41140,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -41081,6 +41597,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -42186,6 +42711,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -42624,6 +43165,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -43729,6 +44279,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -44170,6 +44736,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -45288,6 +45863,22 @@
           }
         }
       },
+      "Refractored.MvvmHelpers/1.6.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmHelpers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -45742,6 +46333,15 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "ZXing.Net/0.16.10": {
@@ -48639,6 +49239,27 @@
         "packageIcon.png"
       ]
     },
+    "Refractored.MvvmHelpers/1.6.2": {
+      "sha512": "pXiyT0ad3QI7IzZSSjVNliyhyyAe7lmNPdfAEgSrtjhF9twrYoKbBlTd58IJc67Fw8QmHEur8F9eBA4rj+BZAg==",
+      "type": "package",
+      "path": "refractored.mvvmhelpers/1.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/MvvmHelpers.dll",
+        "lib/net461/MvvmHelpers.pdb",
+        "lib/net461/MvvmHelpers.xml",
+        "lib/netstandard1.0/MvvmHelpers.dll",
+        "lib/netstandard1.0/MvvmHelpers.pdb",
+        "lib/netstandard1.0/MvvmHelpers.xml",
+        "lib/netstandard2.0/MvvmHelpers.dll",
+        "lib/netstandard2.0/MvvmHelpers.pdb",
+        "lib/netstandard2.0/MvvmHelpers.xml",
+        "refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+        "refractored.mvvmhelpers.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -49839,6 +50460,50 @@
         "system.text.json.9.0.5.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Xamarin.Android.Glide/4.16.0.12": {
@@ -52022,6 +52687,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
       "ZXing.Net.Maui >= 0.6.0",
@@ -52039,6 +52705,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
       "ZXing.Net.Maui >= 0.6.0",
@@ -52056,6 +52723,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
       "ZXing.Net.Maui >= 0.6.0",
@@ -52072,6 +52740,7 @@
       "Microsoft.Maui.Controls >= 9.0.120",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Newtonsoft.Json >= 13.0.4",
+      "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
       "ZXing.Net.Maui >= 0.6.0",
@@ -52200,6 +52869,10 @@
             "target": "Package",
             "version": "[13.0.4, )"
           },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
             "version": "[2.1.11, )"
@@ -52282,6 +52955,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
           },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
@@ -52366,6 +53043,10 @@
             "target": "Package",
             "version": "[13.0.4, )"
           },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
             "version": "[2.1.11, )"
@@ -52443,6 +53124,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
           },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
