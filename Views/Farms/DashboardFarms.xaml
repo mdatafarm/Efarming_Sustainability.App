@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             x:Class="Efarming_Sustainability.App.Views.Farm.DashboardFarms"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+
+    <Grid RowDefinitions="Auto,*">
+        <shared:BasePages Grid.Row="0" Title="Dashboard Fincas"/>
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
+                <Frame Margin="10"
+                   BackgroundColor="#8BC34A"
+                   CornerRadius="20"
+                   HasShadow="True">
+
+                    <Grid ColumnDefinitions="*,Auto">
+                        <!-- Texto -->
+                        <VerticalStackLayout Grid.Column="0" Spacing="5">
+                            <Label Text="{Binding SelectedFarm.Code, StringFormat='Código: {0}'}"
+                               FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                            <Label Text="{Binding SelectedFarm.Name, StringFormat='Nombre: {0}'}"
+                               FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                            <Label Text="{Binding OwnerId, StringFormat='Cédula Propietario: {0}'}"
+                               FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                            <Label Text="{Binding OwnerName, StringFormat='Nombre Propietario: {0}'}"
+                               FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+
+                        <!-- Imagen -->
+                        <Image Source="farms.png"
+                           WidthRequest="90"
+                           HeightRequest="80"
+                           Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Label Text="Acciones"
+                   FontAttributes="Bold"
+                   FontSize="22"
+                   HorizontalOptions="Center"
+                   Margin="0,40,0,20"/>
+
+                <VerticalStackLayout Spacing="15">
+
+                    <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                        <shared:ActionCard Text="Finca" Image="coffee.png"
+                                      Command="{Binding OpenFincaCommand}"/>
+                        <shared:ActionCard Text="Personas" Image="coffeefarmer.png"
+                                      Command="{Binding OpenPersonasCommand}"/>
+                        <shared:ActionCard Text="Productividad" Image="coffeeprod.png"
+                                      Command="{Binding OpenProductividadCommand}"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                        <shared:ActionCard Text="Proyectos" Image="projectcolor.png"
+                                      Command="{Binding OpenProjectsCommand}"/>
+                        <shared:ActionCard Text="Fotos" Image="cameracolor.png"
+                                      Command="{Binding OpenFotosCommand}"/>
+                        <shared:ActionCard Text="Contactos" Image="monitoring.png"
+                                      Command="{Binding OpenContactosCommand}"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                        <shared:ActionCard Text="Encuestas" Image="encuestascafe.png"
+                                      Command="{Binding OpenEncuestasCommand}"/>
+                        <shared:ActionCard Text="Regresar" Image="back.png"
+                                      Command="{Binding GoBackCommand}"/>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -4,6 +4,7 @@
              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
              xmlns:viewmodels="clr-namespace:Efarming_Sustainability.App.Models_View"
              x:Class="Efarming_Sustainability.App.Views.Farm.DownloadFarms"
+             x:Name="LocalPage"
              Title=""
              BackgroundColor="{StaticResource Primary}">
 
@@ -44,7 +45,7 @@
                                         BackgroundColor="#2E7D32" 
                                         TextColor="White"
                                         CornerRadius="5"    
-                                        Command="{Binding BindingContext.EditFarmCommand, Source={x:Reference LocalPage}}"
+                                        Command="{Binding Source={x:Reference LocalPage}, Path=BindingContext.EditFarmCommand}"
                                         CommandParameter="{Binding}" />
                                 </HorizontalStackLayout>
                                 </Grid>

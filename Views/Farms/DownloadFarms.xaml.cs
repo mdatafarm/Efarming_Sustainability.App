@@ -8,9 +8,9 @@ public partial class DownloadFarms : ContentPage
 
     private readonly LocalFarmsViewModel _viewModel;
     public DownloadFarms()
-	{
-		InitializeComponent();
-		BindingContext = new LocalFarmsViewModel(new FarmsRepository());
+    {
+        InitializeComponent();
+        BindingContext = new LocalFarmsViewModel(new FarmsRepository());
         Console.WriteLine("BindingContext asignado: " + (BindingContext != null));
     }
 
@@ -22,5 +22,7 @@ public partial class DownloadFarms : ContentPage
         if (BindingContext is LocalFarmsViewModel vm)
             await vm.LoadFarmsAsync();
     }
+
+    
 
 }

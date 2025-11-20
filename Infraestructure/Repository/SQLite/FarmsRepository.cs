@@ -22,10 +22,10 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
         public async Task InitializeAsync()
         {
             await InitAsync();
-            await _db.CreateTableAsync<Farms>();
+            await _db.CreateTableAsync<Farm>();
         }
 
-        public async Task<List<Farms>> GetFarms(Guid userId, Guid? villageId = null, string? code = null)
+        public async Task<List<Farm>> GetFarms(Guid userId, Guid? villageId = null, string? code = null)
         {
             var api = new ConsumoApi("https://localhost:7292/api/Farms/");
             try
@@ -54,37 +54,37 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
                     endpoint += $"?{string.Join("&", queryParams)}";
                 }
 
-                var result = await api.GetAsync<List<Farms>>(endpoint);
-                return result ?? new List<Farms>();
+                var result = await api.GetAsync<List<Farm>>(endpoint);
+                return result ?? new List<Farm>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error al obtener las fincas: {ex.Message}");
-                return new List<Farms>();
+                return new List<Farm>();
             }
         }
 
-        public async Task SaveFarmsLocally(List<Farms> farms)
+        public async Task SaveFarmsLocally(List<Farm> farms)
         {
             await InitializeAsync();
-            await _db.DeleteAllAsync<Farms>();
+            await _db.DeleteAllAsync<Farm>();
             await _db.InsertAllAsync(farms);
         }
 
-        public async Task<List<Farms>> GetLocalFarms()
+        public async Task<List<Farm>> GetLocalFarms()
         {
             await InitializeAsync();
-            return await _db.Table<Farms>().ToListAsync();
+            return await _db.Table<Farm>().ToListAsync();
         }
 
         public async Task DeleteAllFarms()
         {
             await InitializeAsync();
-            await _db.DeleteAllAsync<Farms>();
+            await _db.DeleteAllAsync<Farm>();
         }
 
         
-        public async Task<int> UpdateFarmLocalAsync(Farms farm)
+        public async Task<int> UpdateFarmLocalAsync(Farm farm)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
         }
 
        
-        public async Task<bool> UpdateFarmAndSyncAsync(Farms farm)
+        public async Task<bool> UpdateFarmAndSyncAsync(Farm farm)
         {
             try
             {
@@ -128,7 +128,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
         }
 
         
-        public int UpdateFarm(Farms farm)
+        public int UpdateFarm(Farm farm)
         {
             try
             {

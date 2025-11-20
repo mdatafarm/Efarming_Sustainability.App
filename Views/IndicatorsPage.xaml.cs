@@ -30,4 +30,6 @@ public partial class IndicatorsPage : ContentPage
     {
         await Navigation.PushAsync(new IndexFarms());
     }
+
+
 }

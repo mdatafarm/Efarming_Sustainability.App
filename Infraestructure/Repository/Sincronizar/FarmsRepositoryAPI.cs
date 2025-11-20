@@ -17,7 +17,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
         {
         }
 
-        public async Task<List<Farms>> GetFarms(Guid userId, Guid? villageId = null, string? code = null)
+        public async Task<List<Farm>> GetFarms(Guid userId, Guid? villageId = null, string? code = null)
         {
             try
             {
@@ -34,17 +34,17 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
                     endpoint += $"&VillageId={villageId}";
                 }
 
-                var farmsResult = await api.GetAsync<List<Farms>>(endpoint);
-                return farmsResult ?? new List<Farms>();
+                var farmsResult = await api.GetAsync<List<Farm>>(endpoint);
+                return farmsResult ?? new List<Farm>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error al obtener las fincas desde API: {ex.Message}");
-                return new List<Farms>();
+                return new List<Farm>();
             }
         }
 
-        public async Task<bool> UpdateFarmAsync(Farms farm)
+        public async Task<bool> UpdateFarmAsync(Farm farm)
         {
             try
             {

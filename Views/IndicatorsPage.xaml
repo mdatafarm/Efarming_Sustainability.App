@@ -57,7 +57,7 @@
                    
                     <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource CardFrameStyle}">
                         <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
-                            <Image Source="farm_color.png" HeightRequest="64" WidthRequest="64" />
+                            <Image Source="farmcolor.png" HeightRequest="64" WidthRequest="64" />
                             <Label Text="{Binding AssociatedPeopleCount}" Style="{StaticResource CardNumberLabel}" />
                             <Label Text="Fincas&#10;Asignadas" Style="{StaticResource CardTextLabel}" />
                         </VerticalStackLayout>

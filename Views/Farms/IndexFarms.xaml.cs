@@ -169,7 +169,7 @@ namespace Efarming_Sustainability.App.Views.Farms
         {
             try
             {
-                if (sender is Button btn && btn.CommandParameter is Efarming_Sustainability.Core.Models.Farms farm)
+                if (sender is Button btn && btn.CommandParameter is Efarming_Sustainability.Core.Models.Farm farm)
                 {
                     await _viewModel.DownloadFarmLocallyAsync(farm);
                 }

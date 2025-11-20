@@ -53,29 +53,35 @@ build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.Ap
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farm/DashboardFarms.xaml]
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farms/DashboardFarms.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farm.DashboardFarms.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Farm\DashboardFarms.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Farm\DashboardFarms.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farms.DashboardFarms.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Farms\DashboardFarms.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Farms\DashboardFarms.xaml
 
-[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farm/DownloadFarms.xaml]
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farms/DownloadFarms.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farm.DownloadFarms.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Farm\DownloadFarms.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Farm\DownloadFarms.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farms.DownloadFarms.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Farms\DownloadFarms.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Farms\DownloadFarms.xaml
 
-[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farm/IndexFarms.xaml]
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farms/IndexFarms.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farm.IndexFarms.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Farm\IndexFarms.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Farm\IndexFarms.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farms.IndexFarms.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Farms\IndexFarms.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Farms\IndexFarms.xaml
 
 [C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/IndicatorsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.IndicatorsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\IndicatorsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\IndicatorsPage.xaml
+
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Shared/ActionCard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Shared.ActionCard.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Shared\ActionCard.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Shared\ActionCard.xaml
 
 [C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Shared/BasePages.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

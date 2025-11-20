@@ -81,16 +81,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\Farm\DashboardFarms.xaml">
+	  <MauiXaml Update="Views\Farms\DashboardFarms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Farm\DownloadFarms.xaml">
+	  <MauiXaml Update="Views\Farms\DownloadFarms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Farm\IndexFarms.xaml">
+	  <MauiXaml Update="Views\Farms\IndexFarms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\IndicatorsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Shared\ActionCard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Shared\BasePages.xaml">

@@ -15,7 +15,7 @@ namespace Efarming_Sustainability.App.Models_View
         private readonly IAlert _alert;
 
 
-        private ObservableCollection<Farms> _items;
+        private ObservableCollection<Farm> _items;
         private string? _code;
 
 
@@ -26,7 +26,7 @@ namespace Efarming_Sustainability.App.Models_View
             _farmsRepository = farmsRepository;
 
 
-            _items = new ObservableCollection<Farms>();
+            _items = new ObservableCollection<Farm>();
 
             _alert = alert;
         }
@@ -39,7 +39,7 @@ namespace Efarming_Sustainability.App.Models_View
         }
 
         
-        public ObservableCollection<Farms> Items
+        public ObservableCollection<Farm> Items
         {
             get => _items;
             
@@ -82,14 +82,14 @@ namespace Efarming_Sustainability.App.Models_View
             }
         }
 
-        public async Task DownloadFarmLocallyAsync(Farms farm)
+        public async Task DownloadFarmLocallyAsync(Farm farm)
         {
             if (farm == null)
                 return;
 
             try
             {
-                var farmLocal = new Farms
+                var farmLocal = new Farm   
                 {
                     Id = farm.Id,
                     Name = farm.Name,
@@ -109,7 +109,7 @@ namespace Efarming_Sustainability.App.Models_View
                 };
 
 
-                await _farmsRepository.SaveFarmsLocally(new List<Farms> { farm });
+                await _farmsRepository.SaveFarmsLocally(new List<Farm> { farm });
 
 
                 await _alert.ShowAlert("Descarga", $"Finca '{farm.Name}' descargada.", "OK");
@@ -143,7 +143,7 @@ namespace Efarming_Sustainability.App.Models_View
         }
 
 
-        public async Task<int> UpdateFarmLocalAsync(Farms farm)
+        public async Task<int> UpdateFarmLocalAsync(Farm farm)
         {
             try
             {
@@ -158,7 +158,7 @@ namespace Efarming_Sustainability.App.Models_View
         }
 
        
-        public async Task<bool> UpdateFarmAndSyncAsync(Farms farm)
+        public async Task<bool> UpdateFarmAndSyncAsync(Farm farm)
         {
             try
             {
