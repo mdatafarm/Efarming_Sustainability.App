@@ -66,5 +66,15 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await _db.DeleteAllAsync<Department>();
         }
 
+        public async Task<Department?> GetDepartmentById(Guid departmentId)
+        {
+            await InitializeAsync();
+            return await _db.Table<Department>()
+                            .Where(d => d.Id == departmentId)
+                            .FirstOrDefaultAsync();
+        }
+
+
+
     }
 }

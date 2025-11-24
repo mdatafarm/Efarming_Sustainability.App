@@ -5,7 +5,7 @@
        x:Name="Root"
        Padding="15"
        CornerRadius="25"
-       WidthRequest="120"
+       WidthRequest="130"
        HeightRequest="160"
        BackgroundColor="#E8E8E8"
        HasShadow="True">

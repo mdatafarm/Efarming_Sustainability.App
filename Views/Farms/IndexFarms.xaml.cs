@@ -23,31 +23,32 @@ namespace Efarming_Sustainability.App.Views.Farms
 
         private FarmsViewModel _viewModel;
 
-       
+
 
 
         public IndexFarms()
         {
             InitializeComponent();
 
-            // Crear viewmodels (siguiendo la convención del proyecto)
+            
             _departmentsVM = new DepartmentsViewModel(new DepartmentsRepository());
             _municipalityVM = new MunicipalityViewModel(new MunicipalityRepository());
             _villageVM = new VillageViewModel(new VillageRepository());
 
-            // Mostrar la propiedad Name en los Pickers
+            
             dptPicker.ItemDisplayBinding = new Binding("Name");
             mcppicker.ItemDisplayBinding = new Binding("Name");
             vilpicker.ItemDisplayBinding = new Binding("Name");
 
-            // Eventos de selección para filtrar
+            
             dptPicker.SelectedIndexChanged += DptPicker_SelectedIndexChanged;
             mcppicker.SelectedIndexChanged += McpPicker_SelectedIndexChanged;
 
             _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository());
             BindingContext = _viewModel;
 
-           
+
+
         }
 
         protected override async void OnAppearing()

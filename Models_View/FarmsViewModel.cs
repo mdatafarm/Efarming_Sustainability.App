@@ -12,7 +12,7 @@ namespace Efarming_Sustainability.App.Models_View
     public class FarmsViewModel
     {
         private readonly FarmsRepository _farmsRepository;
-        
+
         private readonly IAlert _alert;
 
 
@@ -35,19 +35,19 @@ namespace Efarming_Sustainability.App.Models_View
         public string? Code
         {
             get => _code;
-            
-            set => _code = value; 
+
+            set => _code = value;
         }
 
-        
+
         public ObservableCollection<Farm> Items
         {
             get => _items;
-            
-            set => _items = value; 
+
+            set => _items = value;
         }
 
-       
+
         public string? Name { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
@@ -90,20 +90,20 @@ namespace Efarming_Sustainability.App.Models_View
 
             try
             {
-                var farmLocal = new Farm   
+                var farmLocal = new Farm
                 {
                     Id = farm.Id,
                     Name = farm.Name,
-                    CreatedAt= farm.CreatedAt,
-                    UpdatedAt=farm.UpdatedAt,
+                    CreatedAt = farm.CreatedAt,
+                    UpdatedAt = farm.UpdatedAt,
                     Code = farm.Code,
                     VillageId = farm.VillageId,
-                    FarmSubstatusId= farm.FarmSubstatusId,
-                    FarmStatusId=farm.FarmStatusId,
-                    CooperativeId=farm.CooperativeId,
-                    OwnershipTypeId=farm.OwnershipTypeId,
-                    DeletedAt=farm.DeletedAt,
-                    SupplyChainId= farm.SupplyChainId,
+                    FarmSubstatusId = farm.FarmSubstatusId,
+                    FarmStatusId = farm.FarmStatusId,
+                    CooperativeId = farm.CooperativeId,
+                    OwnershipTypeId = farm.OwnershipTypeId,
+                    DeletedAt = farm.DeletedAt,
+                    SupplyChainId = farm.SupplyChainId,
                     Latitude = farm.Latitude,
                     Longitude = farm.Longitude,
 
@@ -121,14 +121,14 @@ namespace Efarming_Sustainability.App.Models_View
             {
                 Console.WriteLine($"Error al descargar finca localmente: {ex.Message}");
 
-                
+
                 if (Shell.Current != null)
                 {
                     await Shell.Current.DisplayAlert("Error de Descarga", $"No se pudo guardar la finca localmente: {ex.Message}", "OK");
                 }
                 else
                 {
-                   
+
                     Console.WriteLine($"ERROR: {ex.Message} (Fallo al mostrar DisplayAlert porque Shell.Current es null)");
                 }
             }
@@ -139,7 +139,7 @@ namespace Efarming_Sustainability.App.Models_View
             _items.Clear();
             var farms = await _farmsRepository.GetLocalFarms();
 
-            foreach(var farm in farms)
+            foreach (var farm in farms)
             {
                 _items.Add(farm);
             }
@@ -160,7 +160,7 @@ namespace Efarming_Sustainability.App.Models_View
             }
         }
 
-       
+
         public async Task<bool> UpdateFarmAndSyncAsync(Farm farm)
         {
             try
@@ -174,5 +174,8 @@ namespace Efarming_Sustainability.App.Models_View
                 return false;
             }
         }
+
+
+
     }
 }

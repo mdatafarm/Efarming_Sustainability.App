@@ -16,7 +16,6 @@
                     TextColor="Black"
                     TitleColor="Gray" />
 
-
             <Picker x:Name="mcppicker"
                 Title="Seleccione una Municipio"
                 BackgroundColor="White"

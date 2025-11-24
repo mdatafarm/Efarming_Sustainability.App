@@ -69,6 +69,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.Ap
 build_metadata.AdditionalFiles.TargetPath = Views\Farms\DownloadFarms.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Farms\DownloadFarms.xaml
 
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farms/EditFarms.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farms.EditFarms.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Farms\EditFarms.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Farms\EditFarms.xaml
+
 [C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Farms/FarmsMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Farms.FarmsMenu.xaml

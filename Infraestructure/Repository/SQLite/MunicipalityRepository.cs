@@ -55,5 +55,21 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await InitializeAsync();
             return await _db.Table<Municipality>().ToListAsync();
         }
+
+        public async Task<Municipality> GetMunicipalitiesById(Guid municipalityId)
+        {
+            await InitializeAsync();
+            return await _db.Table<Municipality>()
+                            .Where(m => m.Id == municipalityId)
+                            .FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Municipality>> GetMunicipalitiesByDepartment(Guid departmentId)
+        {
+            await InitializeAsync();
+            return await _db.Table<Municipality>()
+                            .Where(m => m.DepartmentId == departmentId)
+                            .ToListAsync();
+        }
     }
 }

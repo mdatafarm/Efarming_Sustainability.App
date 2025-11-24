@@ -48,8 +48,9 @@ namespace Efarming_Sustainability.App
             //Registro de los viewmodels
 
             builder.Services.AddSingleton<FarmsViewModel>();
-
+            builder.Services.AddSingleton<EditFarmsViewModel>();
             builder.Services.AddTransient<LocalFarmsViewModel>();
+
 
 
 
