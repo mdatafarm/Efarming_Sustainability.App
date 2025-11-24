@@ -12,6 +12,7 @@ namespace Efarming_Sustainability.App.Models_View
     public class FarmsViewModel
     {
         private readonly FarmsRepository _farmsRepository;
+        
         private readonly IAlert _alert;
 
 
@@ -105,11 +106,13 @@ namespace Efarming_Sustainability.App.Models_View
                     SupplyChainId= farm.SupplyChainId,
                     Latitude = farm.Latitude,
                     Longitude = farm.Longitude,
-                    
+
                 };
 
 
                 await _farmsRepository.SaveFarmsLocally(new List<Farm> { farm });
+
+
 
 
                 await _alert.ShowAlert("Descarga", $"Finca '{farm.Name}' descargada.", "OK");

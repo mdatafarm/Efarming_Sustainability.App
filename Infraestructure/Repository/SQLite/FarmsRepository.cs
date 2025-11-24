@@ -126,19 +126,6 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
                 return false;
             }
         }
-
-        
-        public int UpdateFarm(Farm farm)
-        {
-            try
-            {
-                return UpdateFarmLocalAsync(farm).GetAwaiter().GetResult();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error en UpdateFarm síncrono: {ex.Message}");
-                return 0;
-            }
-        }
+       
     }
 }

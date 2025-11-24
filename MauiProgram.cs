@@ -1,4 +1,5 @@
-﻿using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
+﻿using Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar;
+using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
 using Efarming_Sustainability.App.Models_View;
 using Efarming_Sustainability.Core.Interfaces;
 using Microcharts.Maui;
@@ -38,12 +39,18 @@ namespace Efarming_Sustainability.App
             builder.Services.AddSingleton<PlantationVarietiesRepository>();
             builder.Services.AddSingleton<SupplyChainsRepository>();
             builder.Services.AddSingleton<FarmsRepository>();
+            builder.Services.AddSingleton<FarmsRepositoryAPI>();
+            builder.Services.AddSingleton<FamilyUnitMembersRepository>();
+            builder.Services.AddSingleton<FamilyUnitMembersRepositoryAPI>();
+
 
 
             //Registro de los viewmodels
 
             builder.Services.AddSingleton<FarmsViewModel>();
+
             builder.Services.AddTransient<LocalFarmsViewModel>();
+
 
 
             //Registros de servicios

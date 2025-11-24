@@ -131,7 +131,7 @@ public partial class UserLoginPage : ContentPage
 
                 if (Shell.Current != null)
                 {
-                    // Reemplaza la pila y ve a la ruta absoluta (requiere que la ruta esté registrada)
+                    
                     await Shell.Current.GoToAsync("//IndicatorsPage");
                     return;
                 }

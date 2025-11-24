@@ -2,30 +2,33 @@
 <Frame xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        x:Class="Efarming_Sustainability.App.Views.Shared.ActionCard"
-       Padding="10"
+       x:Name="Root"
+       Padding="15"
        CornerRadius="25"
-       WidthRequest="10"
+       WidthRequest="120"
        HeightRequest="160"
-       BackgroundColor="LightGray"
+       BackgroundColor="#E8E8E8"
        HasShadow="True">
 
-    <VerticalStackLayout HorizontalOptions="Center" >
+    <VerticalStackLayout HorizontalOptions="Center">
 
+        <!-- Ícono clickeable -->
         <Image x:Name="CardImage"
-               WidthRequest="60"
-               HeightRequest="60"/>
+               WidthRequest="70"
+               HeightRequest="70">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Command="{Binding Source={x:Reference Root}, Path=Command}"
+                    CommandParameter="{Binding Source={x:Reference Root}, Path=CommandParameter}" />
+            </Image.GestureRecognizers>
+        </Image>
 
         <Label x:Name="CardText"
                FontAttributes="Bold"
-               FontSize="12"
+               FontSize="14"
                HorizontalOptions="Center"
                Margin="0,10,0,0"/>
 
-        <Button x:Name="CardButton"
-                BackgroundColor="#388E3C"
-                Text="Abrir"
-                FontSize="10"
-                Margin="0,5,0,0"/>
     </VerticalStackLayout>
 
 </Frame>

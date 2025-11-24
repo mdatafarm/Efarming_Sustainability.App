@@ -6,13 +6,16 @@ namespace Efarming_Sustainability.App.Views.Shared;
 public partial class ActionCard : Frame
 {
     public static readonly BindableProperty TextProperty =
-       BindableProperty.Create(nameof(Text), typeof(string), typeof(ActionCard), propertyChanged: OnTextChanged);
+        BindableProperty.Create(nameof(Text), typeof(string), typeof(ActionCard), propertyChanged: OnTextChanged);
 
     public static readonly BindableProperty ImageProperty =
         BindableProperty.Create(nameof(Image), typeof(string), typeof(ActionCard), propertyChanged: OnImageChanged);
 
     public static readonly BindableProperty CommandProperty =
-        BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(ActionCard), propertyChanged: OnCommandChanged);
+        BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(ActionCard));
+
+    public static readonly BindableProperty CommandParameterProperty =
+        BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(ActionCard));
 
     public string Text
     {
@@ -32,6 +35,12 @@ public partial class ActionCard : Frame
         set => SetValue(CommandProperty, value);
     }
 
+    public object CommandParameter
+    {
+        get => GetValue(CommandParameterProperty);
+        set => SetValue(CommandParameterProperty, value);
+    }
+
     public ActionCard()
     {
         InitializeComponent();
@@ -39,16 +48,11 @@ public partial class ActionCard : Frame
 
     private static void OnTextChanged(BindableObject bindable, object oldValue, object newValue)
     {
-        ((ActionCard)bindable).CardText.Text = newValue.ToString();
+        ((ActionCard)bindable).CardText.Text = (string)newValue;
     }
 
     private static void OnImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-        ((ActionCard)bindable).CardImage.Source = newValue.ToString();
-    }
-
-    private static void OnCommandChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-        ((ActionCard)bindable).CardButton.Command = (ICommand)newValue;
+        ((ActionCard)bindable).CardImage.Source = (string)newValue;
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Efarming_Sustainability.App.Views.Farms.FarmsMenu"
+             xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+
+    <Grid RowDefinitions="Auto,*">
+        <shared:BasePages Grid.Row="0" Title="Menu Fincas"/>
+        
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <shared:ActionCard Text="Editar Finca" Image="editfarmscolor.png"
+               Command="{Binding OpenFincaCommand}"/>
+                    <shared:ActionCard Text="Cargar Finca" Image="uploadcolor.png"
+               Command="{Binding OpenPersonasCommand}"/>
+                    <shared:ActionCard Text="Regresar" Image="back.png"
+               Command="{Binding OpenProductividadCommand}"/>
+
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

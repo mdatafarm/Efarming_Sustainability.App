@@ -23,6 +23,8 @@ namespace Efarming_Sustainability.App.Views.Farms
 
         private FarmsViewModel _viewModel;
 
+       
+
 
         public IndexFarms()
         {
@@ -44,6 +46,8 @@ namespace Efarming_Sustainability.App.Views.Farms
 
             _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository());
             BindingContext = _viewModel;
+
+           
         }
 
         protected override async void OnAppearing()
