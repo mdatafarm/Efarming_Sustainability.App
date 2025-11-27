@@ -12,7 +12,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
 
         public SupplyChainsRepositoryAPI()
         {
-            _api = new ConsumoApi("https://localhost:7292/api/SupplyChains/");
+            _api = new ConsumoApi("https://localhost:7292/api/SupplyChain/");
         }
 
         public async Task<List<SupplyChains>> GetSupplyChains()

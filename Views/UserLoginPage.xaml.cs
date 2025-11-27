@@ -31,6 +31,9 @@ public partial class UserLoginPage : ContentPage
     private readonly PlantationVarietiesRepositoryAPI _plantationVarietiesRepositoryAPI;
     private readonly SupplyChainsRepository _supplyChainsRepository;
     private readonly SupplyChainsRepositoryAPI _supplyChainsRepositoryAPI;
+    private readonly FarmStatusRepository _farmStatusRepository;
+    private readonly FarmStatusRepositoryAPI _farmStatusRepositoryAPI;
+
     public UserLoginPage(UserLoginRepository userLoginRepository, 
         IndicatorsRepository indicatorsRepository,
         IndicatorsRepositoryAPI indicatorsRepositoryAPI, 
@@ -51,7 +54,10 @@ public partial class UserLoginPage : ContentPage
         PlantationVarietiesRepository plantationVarietiesRepository, 
         PlantationVarietiesRepositoryAPI plantationVarietiesRepositoryAPI, 
         SupplyChainsRepository supplyChainsRepository, 
-        SupplyChainsRepositoryAPI supplyChainsRepositoryAPI)
+        SupplyChainsRepositoryAPI supplyChainsRepositoryAPI,
+        FarmStatusRepository farmStatusRepository,
+        FarmStatusRepositoryAPI farmStatusRepositoryAPI
+        )
     {
         _userLoginRepository = userLoginRepository;
         _indicatorsRepository = indicatorsRepository;
@@ -74,6 +80,8 @@ public partial class UserLoginPage : ContentPage
         _plantationVarietiesRepositoryAPI = plantationVarietiesRepositoryAPI;
         _supplyChainsRepository = supplyChainsRepository;
         _supplyChainsRepositoryAPI = supplyChainsRepositoryAPI;
+        _farmStatusRepository = farmStatusRepository;
+        _farmStatusRepositoryAPI = farmStatusRepositoryAPI;
 
 
         InitializeComponent();
@@ -104,6 +112,8 @@ public partial class UserLoginPage : ContentPage
                 var CooperativesResponse = await _cooperativeRepositoryAPI.GetCooperatives();
                 await _cooperativeRepository.SaveCooperativesLocally(CooperativesResponse);
 
+
+
                 var DepartmentsResponse = await _departmentsRepositoryAPI.GetDepartments();
                 await _departmentsRepository.SaveDepartamentsLocally(DepartmentsResponse);
 
@@ -127,6 +137,9 @@ public partial class UserLoginPage : ContentPage
 
                 var SupplyChainsResponse = await _supplyChainsRepositoryAPI.GetSupplyChains();
                 await _supplyChainsRepository.SaveSupplyChainsLocally(SupplyChainsResponse);
+
+                var FarmStatusResponse = await _farmStatusRepositoryAPI.GetFarmStatuses();
+                await _farmStatusRepository.SaveFarmStatusesLocally(FarmStatusResponse);
 
 
                 if (Shell.Current != null)

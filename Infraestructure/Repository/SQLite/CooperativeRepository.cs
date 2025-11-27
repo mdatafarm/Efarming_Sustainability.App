@@ -56,5 +56,15 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await InitializeAsync();
             await _db.DeleteAllAsync<Cooperative>();
         }
+
+        public async Task<Cooperative?> GetCooperativesbyId(Guid? Id)
+        {
+            await InitializeAsync();
+            return await _db.Table<Cooperative>()
+                .Where(c => c.Id == Id)
+                .FirstOrDefaultAsync();
+
+        }
+
     }
 }

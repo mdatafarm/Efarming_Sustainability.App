@@ -56,5 +56,13 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await InitializeAsync();
             await _db.DeleteAllAsync<SupplyChains>();
         }
+
+        public async Task<SupplyChains?> GetSupplyChainsById(Guid? id)
+        {
+            await InitializeAsync();
+            return await _db.Table<SupplyChains>()
+                .Where(sc => sc.Id == id)
+                .FirstOrDefaultAsync();
+        }   
     }
 }

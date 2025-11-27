@@ -15,61 +15,83 @@
                 <Label Text="Codigo de la finca" TextColor="Black"/>
                 <Entry Text="{Binding SelectedFarm.Code}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
-                <Label Text="Codigo de la finca" TextColor="Black"/>
-                <Entry Text="{Binding SelectedFarm.Code}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
-
                 <Picker x:Name="dptPicker"
-                    Title="Seleccione una Departamento"
+                    Title="Seleccione un Departamento"
+                    ItemsSource="{Binding Departments}"
+                    SelectedItem="{Binding SelectedDepartment}"
+                    ItemDisplayBinding="{Binding Name}" 
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black"/>
 
-
-                <Picker x:Name="mcppicker"
-                    Title="Seleccione una Municipio"
+                <Picker
+                    x:Name="mcppicker"
+                    Title="Seleccione un Municipio"
+                    ItemsSource="{Binding Municipalities}"
+                    SelectedItem="{Binding SelectedMunicipality}"
+                    ItemDisplayBinding="{Binding Name}"
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black"/>
 
-                <Picker x:Name="vilpicker"
+                <Picker  x:Name="vilpicker"
                     Title="Seleccione una vereda"
+                    ItemsSource="{Binding Villages}"
+                    SelectedItem="{Binding SelectedVillage}"
+                    ItemDisplayBinding="{Binding Name}" 
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black"/>
 
-                <Label Text="Codigo de la finca" TextColor="Black"/>
+                <Label Text="Latitud" TextColor="Black"/>
                 <Entry Text="{Binding SelectedFarm.Latitude}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
-                <Label Text="Codigo de la finca" TextColor="Black"/>
+                <Label Text="Longitud" TextColor="Black"/>
                 <Entry Text="{Binding SelectedFarm.Longitude}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
-                <Button Text="Calcular" BackgroundColor="#2E7D32" TextColor="White" Command="{Binding SaveFarmCommand}"/>
-
+                <Button Text="Calcular" 
+                    BackgroundColor="#2E7D32" 
+                    TextColor="White" 
+                    Command="{Binding GetLocationCommand}" />   
+                
+                
                 <Picker x:Name="Statpicker"
-                    Title="Seleccione una vereda"
+                    Title="Estatus de la finca"
+                     ItemsSource="{Binding FarmStatuses}"
+                     SelectedItem="{Binding SelectedFarmStatus}"
+                     ItemDisplayBinding="{Binding Name}"
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black" />
 
                 <Picker x:Name="Cooppicker"
-                    Title="Seleccione una vereda"
+                    Title="Cooperativa"
+                    ItemsSource="{Binding Cooperatives}"
+                     SelectedItem="{Binding SelectedCooperative}"
+                     ItemDisplayBinding="{Binding Name}"
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black" />
 
                 <Picker x:Name="Suplypicker"
-                    Title="Seleccione una vereda"
+                    Title="Cadena de suministro"
+                    ItemsSource="{Binding SupplyChains}"
+                    SelectedItem="{Binding SelectedSupplyChain}"
+                    ItemDisplayBinding="{Binding Name}"
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black" />
                 
                 <Picker x:Name="Ownpicker"
-                    Title="Seleccione una vereda"
+                    Title="Tipo de propiedad"
+                    ItemsSource="{Binding OwnershipTypes}"
+                    SelectedItem="{Binding SelectedOwnershipType}"
+                    ItemDisplayBinding="{Binding Name}"
                     BackgroundColor="White"
                     TextColor="Black"
-                    TitleColor="Gray" />
+                    TitleColor="Black" />
 
-                <Button Text="Guardar Finca" BackgroundColor="#2E7D32" TextColor="White" Command="{Binding SaveFarmCommand}"/>
+                <Button Text="Guardar Finca" BackgroundColor="#2E7D32" TextColor="White" Command="{Binding EditFincaCommand}"/>
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

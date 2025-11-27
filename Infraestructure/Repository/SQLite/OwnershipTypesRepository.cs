@@ -56,5 +56,13 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await InitializeAsync();
             await _db.DeleteAllAsync<OwnershipTypes>();
         }
+
+        public async Task<OwnershipTypes?> GetOwnershipTypesById(Guid? id)
+        {
+            await InitializeAsync();
+            return await _db.Table<OwnershipTypes>()
+                .Where(ot => ot.Id == id)
+                .FirstOrDefaultAsync();
+        }
     }
 }

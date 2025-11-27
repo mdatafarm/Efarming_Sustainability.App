@@ -46,7 +46,9 @@ namespace Efarming_Sustainability.App
                     new PlantationVarietiesRepository(),
                     new PlantationVarietiesRepositoryAPI(),
                     new SupplyChainsRepository(),
-                    new SupplyChainsRepositoryAPI());
+                    new SupplyChainsRepositoryAPI(),
+                    new FarmStatusRepository(),
+                    new FarmStatusRepositoryAPI());
 
                 startPage = new NavigationPage(loginPage);
             }

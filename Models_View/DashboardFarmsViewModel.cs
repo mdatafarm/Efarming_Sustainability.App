@@ -34,7 +34,7 @@ namespace Efarming_Sustainability.App.Models_View
                 return;
             }
 
-            await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(SelectedFarm.Id));
+            await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(SelectedFarm));
         }
     }
 }

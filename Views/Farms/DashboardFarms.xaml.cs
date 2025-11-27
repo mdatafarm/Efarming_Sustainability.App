@@ -20,7 +20,7 @@ public partial class DashboardFarms : ContentPage
     private async void OnStartClicked(object sender, EventArgs e)
     {
 
-        await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(_farm.Id));
+        await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(_farm));
     }
 
 }

@@ -13,7 +13,7 @@
             <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Editar Finca" Image="editfarmscolor.png"
-               Command="{Binding OpenFincaCommand}"/>
+               Command="{Binding EditFincaCommand}"/>
                     <shared:ActionCard Text="Cargar Finca" Image="uploadcolor.png"
                Command="{Binding OpenPersonasCommand}"/>
                     <shared:ActionCard Text="Regresar" Image="back.png"

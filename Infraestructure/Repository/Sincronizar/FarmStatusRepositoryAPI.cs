@@ -12,14 +12,14 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
 
         public FarmStatusRepositoryAPI()
         {
-            _api = new ConsumoApi("https://localhost:7292/api/FarmStatuses/");
+            _api = new ConsumoApi("https://localhost:7292/api/FarmStatus/");
         }
 
         public async Task<List<FarmStatus>> GetFarmStatuses()
         {
             try
             {
-                var result = await _api.GetAsync<List<FarmStatus>>("getFarmStatuses");
+                var result = await _api.GetAsync<List<FarmStatus>>("getFarmStatus");
                 return result;
             }
             catch (Exception ex)
