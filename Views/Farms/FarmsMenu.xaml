@@ -15,7 +15,7 @@
                     <shared:ActionCard Text="Editar Finca" Image="editfarmscolor.png"
                Command="{Binding EditFincaCommand}"/>
                     <shared:ActionCard Text="Cargar Finca" Image="uploadcolor.png"
-               Command="{Binding OpenPersonasCommand}"/>
+               Command="{Binding UploadFarmCommand}"/>
                     <shared:ActionCard Text="Regresar" Image="back.png"
                Command="{Binding OpenProductividadCommand}"/>
 

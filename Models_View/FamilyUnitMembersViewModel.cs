@@ -1,4 +1,5 @@
-﻿using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
+﻿using Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar;
+using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
 using Efarming_Sustainability.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,20 @@ namespace Efarming_Sustainability.App.Models_View
 {
     public class FamilyUnitMembersViewModel
     {
-        private readonly FamilyUnitMembersRepository _familyUnitMembersRepository;
+
+        private readonly FamilyUnitMembersRepositoryAPI _familyUnitMembersRepositoryAPI = new();
+        private readonly FamilyUnitMembersRepository _familyUnitMembersRepository = new();
+        public Farm SelectedFarm { get; }
+        private readonly FarmsRepositoryAPI _farmsRepository = new();
         private readonly IAlert _alert;
         private ObservableCollection<FamilyUnitMembers> _items;
         private string _FarmId;
 
-        public FamilyUnitMembersViewModel(FamilyUnitMembersRepository familyUnitMembersRepository, IAlert alert, string farmId)
+        public FamilyUnitMembersViewModel(FamilyUnitMembers familyUnitMembersRepository, 
+                                          IAlert alert, string farmId)
         {
-            _familyUnitMembersRepository = familyUnitMembersRepository;
+
+            
             _alert = alert;
             _FarmId = farmId;
 
@@ -57,7 +64,7 @@ namespace Efarming_Sustainability.App.Models_View
         {
             try
             {
-                var fumList = await _familyUnitMembersRepository.GetFUM(farmId);
+                var fumList = await _familyUnitMembersRepositoryAPI.GetFUM(farmId);
                 Items.Clear();
 
                 foreach (var fum in fumList)
@@ -91,6 +98,10 @@ namespace Efarming_Sustainability.App.Models_View
                 await _alert.ShowAlert("Error", $"Error al guardar las personas de la unidad familiar localmente: {ex.Message}", "OK");
             }
         }
+
+
+
+
 
 
     }

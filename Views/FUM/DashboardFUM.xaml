@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             x:Class="Efarming_Sustainability.App.Views.FUM.DashboardFUM"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+    <Grid RowDefinitions="Auto,*">
+        <shared:BasePages Grid.Row="0" Title="Menu Personas"/>
+        
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <shared:ActionCard Text="Crear Persona" Image="addpeople.png"
+                    Command="{Binding EditFincaCommand}"/>
+                    <shared:ActionCard Text="Editar Persona" Image="editpeoplecolor.png"
+                    Command="{Binding UploadFarmCommand}"/>
+                    <shared:ActionCard Text="Regresar" Image="back.png"
+                    Command="{Binding OpenProductividadCommand}"/>
+                </HorizontalStackLayout>
+                
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <shared:ActionCard Text="Cargar Persona" Image="uploadcolor.png"
+                     Command="{Binding EditFincaCommand}"/>
+                </HorizontalStackLayout>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid
+</ContentPage>

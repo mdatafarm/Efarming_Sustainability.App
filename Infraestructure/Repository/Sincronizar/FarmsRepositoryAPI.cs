@@ -53,7 +53,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
                 using var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                
-                var response = await http.PutAsync("updateFarm", content);
+                var response = await http.PostAsync("UpdateFarms", content);
 
                 if (!response.IsSuccessStatusCode)
                 {
