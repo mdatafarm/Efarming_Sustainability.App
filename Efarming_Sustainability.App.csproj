@@ -96,6 +96,9 @@
 	  <MauiXaml Update="Views\Farms\IndexFarms.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\FUM\CreateFUM.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\FUM\DashboardFUM.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

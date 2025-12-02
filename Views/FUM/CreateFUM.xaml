@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Efarming_Sustainability.App.Views.FUM.CreateFUM"
+             xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             Title=""
+             BackgroundColor="{StaticResource Primary}">
+    <Grid RowDefinitions="Auto,*">
+        <shared:BasePages Grid.Row="0" Title="Información Basica"/>
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
+                <Label Text="Identificacion" TextColor="Black"/>
+                <Entry Text="{Binding SelectedFarm.Name}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+                
+                
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

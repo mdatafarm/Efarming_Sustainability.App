@@ -12,16 +12,16 @@
             <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Crear Persona" Image="addpeople.png"
-                    Command="{Binding EditFincaCommand}"/>
+                    Command="{Binding CreateFUMCommand}"/>
                     <shared:ActionCard Text="Editar Persona" Image="editpeoplecolor.png"
-                    Command="{Binding UploadFarmCommand}"/>
+                    Command="{Binding EditFUMCommand}"/>
                     <shared:ActionCard Text="Regresar" Image="back.png"
                     Command="{Binding OpenProductividadCommand}"/>
                 </HorizontalStackLayout>
                 
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Cargar Persona" Image="uploadcolor.png"
-                     Command="{Binding EditFincaCommand}"/>
+                     Command="{Binding UploadFUMCommand}"/>
                 </HorizontalStackLayout>
                 
             </VerticalStackLayout>

@@ -24,9 +24,7 @@ namespace Efarming_Sustainability.App.Models_View
         public FarmsMenuViewModel(Farm farm)
         {
             SelectedFarm = farm;
-
             EditFincaCommand = new Command(async () => await EditFinca());
-
             UploadFarmCommand = new Command(async () => await UploadFarmAsync());
         }
 

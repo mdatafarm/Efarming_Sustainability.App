@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Efarming_Sustainability.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d7b752445f38e7067161f85c7415bca001175f6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3b15e6062f81ca2e55ef9ff6a751c2446d8a4335")]
 [assembly: System.Reflection.AssemblyProductAttribute("Efarming_Sustainability.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Efarming_Sustainability.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

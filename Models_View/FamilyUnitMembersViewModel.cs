@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Efarming_Sustainability.App.Models_View
 {
@@ -21,11 +22,12 @@ namespace Efarming_Sustainability.App.Models_View
         private ObservableCollection<FamilyUnitMembers> _items;
         private string _FarmId;
 
-        public FamilyUnitMembersViewModel(FamilyUnitMembers familyUnitMembersRepository, 
-                                          IAlert alert, string farmId)
-        {
+        public ICommand EditFUMCommand { get; }
+        public ICommand CreateFUMCommand { get; }
 
-            
+        public FamilyUnitMembersViewModel(FamilyUnitMembers familyUnitMembersRepository, 
+                                    IAlert alert, string farmId)
+        {
             _alert = alert;
             _FarmId = farmId;
 
@@ -42,8 +44,6 @@ namespace Efarming_Sustainability.App.Models_View
             get => _items;
             set => _items = value;
         }
-
-
 
         public Guid Id { get; set; }
         public string? FirstName { get; set; }
