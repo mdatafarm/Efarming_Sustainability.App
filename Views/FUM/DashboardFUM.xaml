@@ -7,7 +7,7 @@
              BackgroundColor="{StaticResource Primary}">
     <Grid RowDefinitions="Auto,*">
         <shared:BasePages Grid.Row="0" Title="Menu Personas"/>
-        
+
         <ScrollView Grid.Row="1">
             <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
@@ -18,13 +18,14 @@
                     <shared:ActionCard Text="Regresar" Image="back.png"
                     Command="{Binding OpenProductividadCommand}"/>
                 </HorizontalStackLayout>
-                
+
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Cargar Persona" Image="uploadcolor.png"
                      Command="{Binding UploadFUMCommand}"/>
                 </HorizontalStackLayout>
-                
+
             </VerticalStackLayout>
         </ScrollView>
-    </Grid
+    </Grid>
 </ContentPage>
+    

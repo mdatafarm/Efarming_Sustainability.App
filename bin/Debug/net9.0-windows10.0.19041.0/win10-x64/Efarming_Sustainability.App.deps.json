@@ -18,6 +18,7 @@
           "Microsoft.Maui.Controls": "9.0.120",
           "Microsoft.Maui.Controls.Compatibility": "9.0.120",
           "Newtonsoft.Json": "13.0.4",
+          "Plugin.Maui.Calendar": "2.0.12",
           "Refractored.MvvmHelpers": "1.6.2",
           "SQLitePCLRaw.bundle_green": "2.1.11",
           "SkiaSharp.Views.Maui.Controls": "3.119.1",
@@ -809,6 +810,18 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -1492,6 +1505,13 @@
       "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
       "path": "newtonsoft.json/13.0.4",
       "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "Plugin.Maui.Calendar/2.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XgOma9B+m6s5hRTv/Jc9cweWm0WmJmlzY96crOgUJnyuAZWybrz48VjBQArwFTw+qgVwH9WK2uA/xZIB02VtoA==",
+      "path": "plugin.maui.calendar/2.0.12",
+      "hashPath": "plugin.maui.calendar.2.0.12.nupkg.sha512"
     },
     "Refractored.MvvmHelpers/1.6.2": {
       "type": "package",

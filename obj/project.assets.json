@@ -891,6 +891,23 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -4295,6 +4312,23 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -7656,6 +7690,23 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
             "related": ".xml"
           }
         }
@@ -11025,6 +11076,23 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -14383,6 +14451,23 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
             "related": ".xml"
           }
         }
@@ -17747,6 +17832,23 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll": {
             "related": ".xml"
           }
         }
@@ -21142,6 +21244,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -22543,6 +22658,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -23858,6 +23986,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -25171,6 +25312,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -26491,6 +26645,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -27814,6 +27981,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -29170,6 +29350,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -30687,6 +30880,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -32043,6 +32249,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -33403,6 +33622,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -34756,6 +34988,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -36120,6 +36365,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -37769,6 +38027,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -39569,6 +39840,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -41138,6 +41422,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -42711,6 +43008,19 @@
           }
         }
       },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "type": "package",
         "dependencies": {
@@ -44277,6 +44587,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -45861,6 +46184,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Calendar/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Maui.Controls": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll": {}
         }
       },
       "Refractored.MvvmHelpers/1.6.2": {
@@ -49237,6 +49573,25 @@
         "newtonsoft.json.13.0.4.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.Maui.Calendar/2.0.12": {
+      "sha512": "XgOma9B+m6s5hRTv/Jc9cweWm0WmJmlzY96crOgUJnyuAZWybrz48VjBQArwFTw+qgVwH9WK2uA/xZIB02VtoA==",
+      "type": "package",
+      "path": "plugin.maui.calendar/2.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net9.0-android35.0/Plugin.Maui.Calendar.dll",
+        "lib/net9.0-android35.0/Plugin.Maui.Calendar.xml",
+        "lib/net9.0-ios18.0/Plugin.Maui.Calendar.dll",
+        "lib/net9.0-maccatalyst18.0/Plugin.Maui.Calendar.dll",
+        "lib/net9.0-windows10.0.19041/Plugin.Maui.Calendar.dll",
+        "lib/net9.0/Plugin.Maui.Calendar.dll",
+        "nuget.png",
+        "plugin.maui.calendar.2.0.12.nupkg.sha512",
+        "plugin.maui.calendar.nuspec"
       ]
     },
     "Refractored.MvvmHelpers/1.6.2": {
@@ -52687,6 +53042,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Calendar >= 2.0.12",
       "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
@@ -52705,6 +53061,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Calendar >= 2.0.12",
       "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
@@ -52723,6 +53080,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Calendar >= 2.0.12",
       "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
@@ -52740,6 +53098,7 @@
       "Microsoft.Maui.Controls >= 9.0.120",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.120",
       "Newtonsoft.Json >= 13.0.4",
+      "Plugin.Maui.Calendar >= 2.0.12",
       "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "SkiaSharp.Views.Maui.Controls >= 3.119.1",
@@ -52869,6 +53228,10 @@
             "target": "Package",
             "version": "[13.0.4, )"
           },
+          "Plugin.Maui.Calendar": {
+            "target": "Package",
+            "version": "[2.0.12, )"
+          },
           "Refractored.MvvmHelpers": {
             "target": "Package",
             "version": "[1.6.2, )"
@@ -52955,6 +53318,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Calendar": {
+            "target": "Package",
+            "version": "[2.0.12, )"
           },
           "Refractored.MvvmHelpers": {
             "target": "Package",
@@ -53043,6 +53410,10 @@
             "target": "Package",
             "version": "[13.0.4, )"
           },
+          "Plugin.Maui.Calendar": {
+            "target": "Package",
+            "version": "[2.0.12, )"
+          },
           "Refractored.MvvmHelpers": {
             "target": "Package",
             "version": "[1.6.2, )"
@@ -53124,6 +53495,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Plugin.Maui.Calendar": {
+            "target": "Package",
+            "version": "[2.0.12, )"
           },
           "Refractored.MvvmHelpers": {
             "target": "Package",

@@ -55,6 +55,10 @@ namespace Efarming_Sustainability.App
             builder.Services.AddSingleton<FarmStatusViewModel>();
             builder.Services.AddSingleton<SupplyChainsViewModel>();
             builder.Services.AddSingleton<OwnershipTypesViewModel>();
+            builder.Services.AddSingleton<DepartmentsViewModel>();
+            builder.Services.AddSingleton<MunicipalityViewModel>();
+            builder.Services.AddSingleton<VillageViewModel>();
+            builder.Services.AddSingleton<FUMMenuViewModel>();
 
 
 

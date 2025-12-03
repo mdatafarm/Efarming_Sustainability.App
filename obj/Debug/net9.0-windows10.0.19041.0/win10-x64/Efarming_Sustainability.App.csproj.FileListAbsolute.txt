@@ -667,3 +667,4 @@ C:\Users\desarrollo\source\repos\Efarming_Sustainability.App\obj\Debug\net9.0-wi
 C:\Users\desarrollo\source\repos\Efarming_Sustainability.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\desarrollo\source\repos\Efarming_Sustainability.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\desarrollo\source\repos\Efarming_Sustainability.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\desarrollo\source\repos\Efarming_Sustainability.App\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.Maui.Calendar.dll

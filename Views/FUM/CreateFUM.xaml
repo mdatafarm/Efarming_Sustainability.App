@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Efarming_Sustainability.App.Views.FUM.CreateFUM"
              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             xmlns:controls="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              Title=""
              BackgroundColor="{StaticResource Primary}">
     <Grid RowDefinitions="Auto,*">
@@ -10,9 +11,72 @@
         <ScrollView Grid.Row="1">
             <VerticalStackLayout Grid.Row="1" Spacing="25" Padding="30" VerticalOptions="Start">
                 <Label Text="Identificacion" TextColor="Black"/>
-                <Entry Text="{Binding SelectedFarm.Name}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
-                
-                
+                <Entry Text="{Binding Identification}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+
+                <Label Text="Nombres" TextColor="Black"/>
+                <Entry Text="{Binding firstName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+
+                <Label Text="Apellidos" TextColor="Black"/>
+                <Entry Text="{Binding lastName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+
+                <Label Text="Fecha Nacimiento" TextColor="Black" />
+                <DatePicker x:Name="AgePicker" Date="{Binding Age}" TextColor="Black"  BackgroundColor="White"/>
+
+                <Picker x:Name="EducationPicker"
+                 Title="Seleccione Educacion"
+                 TextColor="Black"
+                 BackgroundColor="White"
+                 >   
+                    <Picker.Items>
+                        <x:String>Primaria</x:String>
+                        <x:String>Secundaria</x:String>
+                        <x:String>Tecnico</x:String>
+                        <x:String>Tecnologo</x:String>
+                        <x:String>Pregrado</x:String>
+                        <x:String>Postgrado</x:String>
+                        <x:String>Especialista</x:String>
+                        <x:String>Magister</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Telefono" TextColor="Black" />
+                <Entry Text="{Binding phoneNumber}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+
+                <Picker x:Name="RelationshipPicker"
+                     Title="Seleccione Relacion"
+                     TextColor="Black"
+                     BackgroundColor="White"
+                    >
+                      <Picker.Items>
+                        <x:String>Padre/Madre</x:String>
+                        <x:String>Hijo/Hija</x:String>
+                        <x:String>Conyugue</x:String>
+                        <x:String>Hermano/Hermano</x:String>
+                        <x:String>Tio/Tia</x:String>
+                        <x:String>Primo/Prima</x:String>
+                        <x:String>Sobrino/Sobrina</x:String>
+                        <x:String>Nieta/Nieto</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker x:Name="MaritalStatusPicker"
+                     Title="Seleccione Estado Civil"
+                     TextColor="Black"
+                     BackgroundColor="White"
+                     >
+                    <Picker.Items>
+                        <x:String>Soltero/a</x:String>
+                        <x:String>Casado/a</x:String>
+                        <x:String>Viudo/a</x:String>
+                        <x:String>Union Libre</x:String>
+                        <x:String>Divorciado/a</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Es Propietario" TextColor="Black"/>
+                <CheckBox IsChecked="{Binding IsOwner}" Color="Black"/>
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
