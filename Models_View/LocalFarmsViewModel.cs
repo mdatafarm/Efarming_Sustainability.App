@@ -17,18 +17,19 @@ namespace Efarming_Sustainability.App.Models_View
     public class LocalFarmsViewModel : BaseViewModel
     {
         private readonly FarmsRepository _repository;
-
+        private readonly IAlert _alert;
         public ObservableCollection<Farm> LocalFarms { get; set; } = new();
 
         public Command LoadFarmsCommand { get; }
         public ICommand EditFarmCommand { get; }
 
-        public LocalFarmsViewModel(FarmsRepository repository)
+        public LocalFarmsViewModel(FarmsRepository repository, IAlert alert)
         {
             _repository = repository;
 
             LoadFarmsCommand = new Command(async () => await LoadFarmsAsync());
             EditFarmCommand = new Command<Farm>(async farm => await EditFarm(farm));
+            _alert = alert;
         }
 
         public async Task LoadFarmsAsync()
@@ -59,7 +60,7 @@ namespace Efarming_Sustainability.App.Models_View
             if (farm == null) return;
 
             // Navegación usando Navigation.PushAsync (lo usas en tu proyecto)
-            await Application.Current.MainPage.Navigation.PushAsync(new DashboardFarms(farm));
+            await Application.Current.MainPage.Navigation.PushAsync(new DashboardFarms(farm, _alert));
         }
     }
 }

@@ -83,7 +83,9 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             await _db.DeleteAllAsync<Farm>();
         }
 
-        
+
+
+
         public async Task<int> UpdateFarmLocalAsync(Farm farm)
         {
             try
@@ -98,7 +100,14 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             }
         }
 
-       
+        public async Task<Farm> GetFarmbyId(Guid farmId)
+        {
+            await InitializeAsync();
+
+            return await _db.Table<Farm>().FirstOrDefaultAsync(f => f.Id == farmId);
+        }
+
+
         public async Task<bool> UpdateFarmAndSyncAsync(Farm farm)
         {
             try

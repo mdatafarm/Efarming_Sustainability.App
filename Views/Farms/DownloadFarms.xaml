@@ -5,6 +5,7 @@
              xmlns:viewmodels="clr-namespace:Efarming_Sustainability.App.Models_View"
              x:Class="Efarming_Sustainability.App.Views.Farm.DownloadFarms"
              x:Name="LocalPage"
+             NavigationPage.HasNavigationBar="False"
              Title=""
              BackgroundColor="{StaticResource Primary}">
 

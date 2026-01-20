@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
+             xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
              x:Class="Efarming_Sustainability.App.Views.FUM.DashboardFUM"
+             NavigationPage.HasNavigationBar="False"
              Title=""
              BackgroundColor="{StaticResource Primary}">
     <Grid RowDefinitions="Auto,*">
@@ -13,16 +14,101 @@
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Crear Persona" Image="addpeople.png"
                     Command="{Binding CreateFUMCommand}"/>
-                    <shared:ActionCard Text="Editar Persona" Image="editpeoplecolor.png"
-                    Command="{Binding EditFUMCommand}"/>
+                    <shared:ActionCard Text="Editar Persona"
+                   Image="editpeoplecolor.png"
+                   Command="{Binding EditFUMCommand}"
+                   IsEnabled="{Binding CanEditFUM}" />
                     <shared:ActionCard Text="Regresar" Image="back.png"
-                    Command="{Binding OpenProductividadCommand}"/>
+                    Command="{Binding BackCommand}"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
                     <shared:ActionCard Text="Cargar Persona" Image="uploadcolor.png"
                      Command="{Binding UploadFUMCommand}"/>
                 </HorizontalStackLayout>
+
+                <VerticalStackLayout Spacing="0"
+                     Margin="0,30,0,0"
+                     HorizontalOptions="Center"
+                     WidthRequest="500">
+
+                    <!-- TÍTULO -->
+                    <Label Text="Personas registradas"
+           FontSize="20"
+           FontAttributes="Bold"
+           TextColor="Black"
+           HorizontalOptions="Start"
+           Margin="0,0,0,10"/>
+
+                    <!-- HEADER -->
+                    <Grid BackgroundColor="#2E7D32"
+          Padding="10"
+          ColumnDefinitions="3*,3*,*">
+
+                        <Label Text="Nombre"
+               TextColor="White"
+               FontAttributes="Bold"/>
+
+                        <Label Text="Documento"
+               Grid.Column="1"
+               TextColor="White"
+               FontAttributes="Bold"/>
+
+                        <Label Text="Acciones"
+               Grid.Column="2"
+               HorizontalTextAlignment="Center"
+               TextColor="White"
+               FontAttributes="Bold"/>
+                    </Grid>
+
+                    <!-- TABLA -->
+                    <CollectionView ItemsSource="{Binding FUMList}"
+                    SelectionMode="Single"
+                    SelectedItem="{Binding SelectedFUM}"
+                    HeightRequest="250">
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10"
+                      ColumnDefinitions="3*,3*,*"
+                      BackgroundColor="White">
+
+                                  
+                                    <Grid.Triggers>
+                                        <DataTrigger TargetType="Grid"
+                                     Binding="{Binding ., 
+                                     Source={RelativeSource AncestorType={x:Type CollectionView}}}"
+                                     Value="{Binding SelectedFUM}">
+                                            <Setter Property="BackgroundColor" Value="#E8F5E9"/>
+                                        </DataTrigger>
+                                    </Grid.Triggers>
+
+                                    <Label Text="{Binding FirstName}"
+                                     TextColor="Black"/>
+
+                                    <Label Text="{Binding Identification}"
+                                       Grid.Column="1"
+                                       TextColor="Black"/>
+
+                                    <RadioButton Grid.Column="2"
+                                     GroupName="FUMGroup"
+                                     CheckedChanged="RadioButton_CheckedChanged"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+
+                        <CollectionView.EmptyView>
+                            <Label Text="No hay personas registradas"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"
+                   Margin="0,20"/>
+                        </CollectionView.EmptyView>
+
+                    </CollectionView>
+
+                </VerticalStackLayout>
 
             </VerticalStackLayout>
         </ScrollView>

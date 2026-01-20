@@ -2,6 +2,7 @@
 
 using Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar;
 using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
+using Microsoft.Maui.Animations;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -33,7 +34,7 @@ public partial class UserLoginPage : ContentPage
     private readonly SupplyChainsRepositoryAPI _supplyChainsRepositoryAPI;
     private readonly FarmStatusRepository _farmStatusRepository;
     private readonly FarmStatusRepositoryAPI _farmStatusRepositoryAPI;
-
+    private readonly IAlert _alert;
     public UserLoginPage(UserLoginRepository userLoginRepository, 
         IndicatorsRepository indicatorsRepository,
         IndicatorsRepositoryAPI indicatorsRepositoryAPI, 
@@ -56,7 +57,8 @@ public partial class UserLoginPage : ContentPage
         SupplyChainsRepository supplyChainsRepository, 
         SupplyChainsRepositoryAPI supplyChainsRepositoryAPI,
         FarmStatusRepository farmStatusRepository,
-        FarmStatusRepositoryAPI farmStatusRepositoryAPI
+        FarmStatusRepositoryAPI farmStatusRepositoryAPI,
+        IAlert alert
         )
     {
         _userLoginRepository = userLoginRepository;
@@ -83,7 +85,7 @@ public partial class UserLoginPage : ContentPage
         _farmStatusRepository = farmStatusRepository;
         _farmStatusRepositoryAPI = farmStatusRepositoryAPI;
 
-
+        _alert = alert;
         InitializeComponent();
         Shell.SetNavBarIsVisible(this, false);
         
@@ -150,14 +152,14 @@ public partial class UserLoginPage : ContentPage
                 }
                 if (this.Navigation != null)
                 {
-                    await Navigation.PushAsync(new IndicatorsPage(_indicatorsRepository, loginResponse.UserId));
+                    await Navigation.PushAsync(new IndicatorsPage(_indicatorsRepository, loginResponse.UserId, _alert));
                     
                     return;
                 }
 
 
 
-                Application.Current.MainPage = new NavigationPage(new IndicatorsPage(_indicatorsRepository, loginResponse.UserId));
+                Application.Current.MainPage = new NavigationPage(new IndicatorsPage(_indicatorsRepository, loginResponse.UserId, _alert));
                 return;
             }
         }

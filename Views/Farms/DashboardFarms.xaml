@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
              x:Class="Efarming_Sustainability.App.Views.Farm.DashboardFarms"
+             NavigationPage.HasNavigationBar="False"
              Title=""
              BackgroundColor="{StaticResource Primary}">
 
@@ -48,7 +49,7 @@
                         <shared:ActionCard Text="Finca" Image="coffee.png"
                                       Command="{Binding OpenFincaCommand}"/>
                         <shared:ActionCard Text="Personas" Image="coffeefarmer.png"
-                                      Command="{Binding OpenPersonasCommand}"/>
+                                      Command="{Binding OpenFUMCommand}"/>
                         <shared:ActionCard Text="Productividad" Image="coffeeprod.png"
                                       Command="{Binding OpenProductividadCommand}"/>
                     </HorizontalStackLayout>

@@ -1,6 +1,7 @@
 using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
 using Efarming_Sustainability.App.Models_View;
 using Efarming_Sustainability.App.Views.Farms;
+using Microsoft.Maui.Animations;
 
 namespace Efarming_Sustainability.App.Views;
 
@@ -9,7 +10,8 @@ public partial class IndicatorsPage : ContentPage
     private readonly IndicatorsRepository _indicatorsRepository;
     private readonly IndicatorsViewModel _vm;
     private readonly Guid _currentUserId;
-    public IndicatorsPage(IndicatorsRepository indicatorsRepository, Guid currentUserId)
+    private readonly IAlert _alert;
+    public IndicatorsPage(IndicatorsRepository indicatorsRepository, Guid currentUserId, IAlert alert)
     {
         InitializeComponent();
         _indicatorsRepository = indicatorsRepository;
@@ -17,6 +19,7 @@ public partial class IndicatorsPage : ContentPage
         _vm = new IndicatorsViewModel(_indicatorsRepository);
         BindingContext = _vm;
         Shell.SetNavBarIsVisible(this, false);
+        _alert = alert;
     }
 
     protected override async void OnAppearing()
@@ -28,7 +31,7 @@ public partial class IndicatorsPage : ContentPage
 
     private async void OnStartClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new IndexFarms());
+        await Navigation.PushAsync(new IndexFarms(_alert));
     }
 
 

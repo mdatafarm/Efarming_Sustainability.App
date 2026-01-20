@@ -11,6 +11,7 @@ public partial class EditFarms : ContentPage
         _farm = farm;
 
         BindingContext = new EditFarmsViewModel(_farm);
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 
 

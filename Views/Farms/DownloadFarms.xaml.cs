@@ -7,11 +7,12 @@ public partial class DownloadFarms : ContentPage
 {
 
     private readonly LocalFarmsViewModel _viewModel;
-    public DownloadFarms()
+    public DownloadFarms(IAlert alert)
     {
         InitializeComponent();
-        BindingContext = new LocalFarmsViewModel(new FarmsRepository());
+        BindingContext = new LocalFarmsViewModel(new FarmsRepository(),alert);
         Console.WriteLine("BindingContext asignado: " + (BindingContext != null));
+        NavigationPage.SetHasNavigationBar(this, false);
     }
 
 

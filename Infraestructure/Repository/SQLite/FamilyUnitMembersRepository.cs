@@ -39,6 +39,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
                 }
 
                 var result = await api.GetAsync<List<FamilyUnitMembers>>(endepoint);
+                await SaveFUMLocal(result);   
                 return result ?? new List<FamilyUnitMembers>();
 
 
@@ -50,10 +51,15 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.SQLite
             }
         }
 
-        public async Task SaveFUMLocally(List<FamilyUnitMembers> fum)
+        public async Task SaveFUMLocal(List<FamilyUnitMembers> fum)
         {
             await InitializeAsync();
             await _db.DeleteAllAsync<FamilyUnitMembers>();
+            await _db.InsertAllAsync(fum);
+        }
+        public async Task SaveFUMLocally(List<FamilyUnitMembers> fum)
+        {
+            await InitializeAsync();
             await _db.InsertAllAsync(fum);
         }
 

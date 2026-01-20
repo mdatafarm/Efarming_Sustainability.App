@@ -23,30 +23,32 @@ namespace Efarming_Sustainability.App.Views.Farms
 
         private FarmsViewModel _viewModel;
 
+        private readonly IAlert _alert;
 
 
-
-        public IndexFarms()
+        public IndexFarms(IAlert alert)
         {
             InitializeComponent();
 
-            
+
             _departmentsVM = new DepartmentsViewModel(new DepartmentsRepository());
             _municipalityVM = new MunicipalityViewModel(new MunicipalityRepository());
             _villageVM = new VillageViewModel(new VillageRepository());
 
-            
+
             dptPicker.ItemDisplayBinding = new Binding("Name");
             mcppicker.ItemDisplayBinding = new Binding("Name");
             vilpicker.ItemDisplayBinding = new Binding("Name");
 
-            
+
             dptPicker.SelectedIndexChanged += DptPicker_SelectedIndexChanged;
             mcppicker.SelectedIndexChanged += McpPicker_SelectedIndexChanged;
 
-            _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository());
+            _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository(),new FamilyUnitMembersRepository());
             BindingContext = _viewModel;
 
+            _alert = alert;
+            NavigationPage.SetHasNavigationBar(this, false);
 
 
         }
@@ -187,7 +189,7 @@ namespace Efarming_Sustainability.App.Views.Farms
 
         private async void OnFarmListClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DownloadFarms());
+            await Navigation.PushAsync(new DownloadFarms(_alert));
         }
 
     }

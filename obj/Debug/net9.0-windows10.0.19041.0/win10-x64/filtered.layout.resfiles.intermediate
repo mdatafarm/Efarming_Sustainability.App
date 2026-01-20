@@ -50,6 +50,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+atras.scale-100.png
 back.scale-100.png
 camera.scale-100.png
 cameracolor.scale-100.png
@@ -59,11 +60,11 @@ coffeefarmer.scale-100.png
 coffeeprod.scale-100.png
 contact.scale-100.png
 contacts.scale-100.png
-dotnet_bot.scale-100.png
-dotnet_bot.scale-125.png
-dotnet_bot.scale-150.png
-dotnet_bot.scale-200.png
-dotnet_bot.scale-400.png
+dotnetbot.scale-100.png
+dotnetbot.scale-125.png
+dotnetbot.scale-150.png
+dotnetbot.scale-200.png
+dotnetbot.scale-400.png
 editfarms.scale-100.png
 editfarmscolor.scale-100.png
 editpeoplecolor.scale-100.png
@@ -88,7 +89,6 @@ productivity.scale-100.png
 productivityfarm.scale-100.png
 project.scale-100.png
 projectcolor.scale-100.png
-return.scale-100.png
 surveys.scale-100.png
 upload.scale-100.png
 uploadcolor.scale-100.png

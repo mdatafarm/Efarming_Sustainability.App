@@ -12,6 +12,7 @@ namespace Efarming_Sustainability.App.Models_View
     public class FarmsViewModel
     {
         private readonly FarmsRepository _farmsRepository;
+        private readonly FamilyUnitMembersRepository _familyUnitMembersRepository;
 
         private readonly IAlert _alert;
 
@@ -21,10 +22,11 @@ namespace Efarming_Sustainability.App.Models_View
 
 
 
-        public FarmsViewModel(FarmsRepository farmsRepository, IAlert alert)
+        public FarmsViewModel(FarmsRepository farmsRepository, IAlert alert, FamilyUnitMembersRepository fumRepository)
         {
 
             _farmsRepository = farmsRepository;
+            _familyUnitMembersRepository = fumRepository;
 
 
             _items = new ObservableCollection<Farm>();
@@ -112,8 +114,7 @@ namespace Efarming_Sustainability.App.Models_View
 
                 await _farmsRepository.SaveFarmsLocally(new List<Farm> { farm });
 
-
-
+                await _familyUnitMembersRepository.GetFUM(farm.Id);
 
                 await _alert.ShowAlert("Descarga", $"Finca '{farm.Name}' descargada.", "OK");
             }

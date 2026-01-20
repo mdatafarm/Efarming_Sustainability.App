@@ -514,6 +514,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.5.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [

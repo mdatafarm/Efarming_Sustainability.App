@@ -22,7 +22,7 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
             try
             {
                 var api = new ConsumoApi(_baseUrl);
-                string endpoint = $"getFamilyUnitMembersByFarmId/{farmId}";
+                string endpoint = $"getFamilyUnitMembers/{farmId}";
 
                 if (farmId == Guid.Empty)
                 {
@@ -49,10 +49,11 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
                 var json = JsonSerializer.Serialize(fum, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 using var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                var response = await http.PutAsync("updateFamilyUnitMember", content);
+                var response = await http.PostAsync("UpdateFamilyUnitMember", content);
                 if (!response.IsSuccessStatusCode)
                 {
                     var body = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(body);
                     Console.WriteLine($"Error API UpdateFUM: {response.StatusCode} - {body}");
                     return false;
                 }

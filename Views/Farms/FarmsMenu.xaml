@@ -4,6 +4,7 @@
              x:Class="Efarming_Sustainability.App.Views.Farms.FarmsMenu"
              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
              Title=""
+             NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Primary}">
 
     <Grid RowDefinitions="Auto,*">
@@ -17,8 +18,8 @@
                     <shared:ActionCard Text="Cargar Finca" Image="uploadcolor.png"
                Command="{Binding UploadFarmCommand}"/>
                     <shared:ActionCard Text="Regresar" Image="back.png"
-               Command="{Binding OpenProductividadCommand}"/>
-
+               Command="{Binding BackCommand}"/>
+                    
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </ScrollView>

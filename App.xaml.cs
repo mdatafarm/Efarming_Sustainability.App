@@ -48,7 +48,8 @@ namespace Efarming_Sustainability.App
                     new SupplyChainsRepository(),
                     new SupplyChainsRepositoryAPI(),
                     new FarmStatusRepository(),
-                    new FarmStatusRepositoryAPI());
+                    new FarmStatusRepositoryAPI(),
+                    new AlertRepository());
 
                 startPage = new NavigationPage(loginPage);
             }

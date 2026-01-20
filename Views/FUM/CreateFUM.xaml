@@ -4,6 +4,7 @@
              x:Class="Efarming_Sustainability.App.Views.FUM.CreateFUM"
              xmlns:shared="clr-namespace:Efarming_Sustainability.App.Views.Shared"
              xmlns:controls="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             NavigationPage.HasNavigationBar="False"
              Title=""
              BackgroundColor="{StaticResource Primary}">
     <Grid RowDefinitions="Auto,*">
@@ -14,10 +15,10 @@
                 <Entry Text="{Binding Identification}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
                 <Label Text="Nombres" TextColor="Black"/>
-                <Entry Text="{Binding firstName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+                <Entry Text="{Binding FirstName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
                 <Label Text="Apellidos" TextColor="Black"/>
-                <Entry Text="{Binding lastName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+                <Entry Text="{Binding LastName}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
                 <Label Text="Fecha Nacimiento" TextColor="Black" />
                 <DatePicker x:Name="AgePicker" Date="{Binding Age}" TextColor="Black"  BackgroundColor="White"/>
@@ -26,7 +27,7 @@
                  Title="Seleccione Educacion"
                  TextColor="Black"
                  BackgroundColor="White"
-                 >   
+                 SelectedItem="{Binding Education, Mode=TwoWay}">   
                     <Picker.Items>
                         <x:String>Primaria</x:String>
                         <x:String>Secundaria</x:String>
@@ -41,13 +42,13 @@
                 </Picker>
 
                 <Label Text="Telefono" TextColor="Black" />
-                <Entry Text="{Binding phoneNumber}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
+                <Entry Text="{Binding PhoneNumber}" TextColor="Black" IsReadOnly="false"  BackgroundColor="White"/>
 
                 <Picker x:Name="RelationshipPicker"
                      Title="Seleccione Relacion"
                      TextColor="Black"
                      BackgroundColor="White"
-                    >
+                    SelectedItem="{Binding Relationship, Mode=TwoWay}">
                       <Picker.Items>
                         <x:String>Padre/Madre</x:String>
                         <x:String>Hijo/Hija</x:String>
@@ -65,7 +66,7 @@
                      Title="Seleccione Estado Civil"
                      TextColor="Black"
                      BackgroundColor="White"
-                     >
+                     SelectedItem="{Binding MaritalStatus, Mode=TwoWay}">
                     <Picker.Items>
                         <x:String>Soltero/a</x:String>
                         <x:String>Casado/a</x:String>
@@ -77,6 +78,8 @@
                 </Picker>
                 <Label Text="Es Propietario" TextColor="Black"/>
                 <CheckBox IsChecked="{Binding IsOwner}" Color="Black"/>
+
+                <Button Text="Crear Persona" BackgroundColor="#2E7D32" TextColor="White" Command="{Binding CreateFUMCommand}"/>
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

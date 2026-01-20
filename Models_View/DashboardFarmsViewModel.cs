@@ -1,4 +1,5 @@
-﻿using Efarming_Sustainability.App.Views.Farms;
+﻿using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
+using Efarming_Sustainability.App.Views.Farms;
 using Efarming_Sustainability.App.Views.FUM;
 using Efarming_Sustainability.Core.Models;
 using System;
@@ -14,14 +15,14 @@ namespace Efarming_Sustainability.App.Models_View
     {
 
         public Farm SelectedFarm { get; }
-
+        private readonly IAlert _alert;
         public ICommand OpenFincaCommand { get; }
         public ICommand OpenFUMCommand { get; }
 
-        public DashboardFarmsViewModel(Farm farm)
+        public DashboardFarmsViewModel(Farm farm, IAlert alert)
         {
             SelectedFarm = farm;
-
+            _alert = alert;
             OpenFincaCommand = new Command(async () => await OpenFinca());
             OpenFUMCommand = new Command(async () => await OpenFUM());
         }
@@ -37,7 +38,7 @@ namespace Efarming_Sustainability.App.Models_View
                 return;
             }
 
-            await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(SelectedFarm));
+            await Application.Current.MainPage.Navigation.PushAsync(new FarmsMenu(SelectedFarm,_alert));
         }
 
         private async Task OpenFUM()
@@ -51,7 +52,7 @@ namespace Efarming_Sustainability.App.Models_View
                 return;
             }
 
-            await Application.Current.MainPage.Navigation.PushAsync(new DashboardFUM(SelectedFarm.Id));
+            await Application.Current.MainPage.Navigation.PushAsync(new DashboardFUM(SelectedFarm.Id,_alert));
         }
 
     }

@@ -3438,7 +3438,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -6820,7 +6821,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -10202,7 +10204,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -13581,7 +13584,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -16960,7 +16964,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -20339,7 +20344,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -21789,7 +21795,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -23117,7 +23124,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -24445,7 +24453,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -25778,7 +25787,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -27111,7 +27121,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -28446,7 +28457,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -30010,7 +30022,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -31381,7 +31394,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -32752,7 +32766,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -34120,7 +34135,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -35494,7 +35510,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -36872,7 +36889,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -38781,7 +38799,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -40365,7 +40384,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -41949,7 +41969,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -43530,7 +43551,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -45114,7 +45136,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}
@@ -46724,7 +46747,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
           "bin/placeholder/Efarming_Sustainability.Core.dll": {}

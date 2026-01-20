@@ -1133,7 +1133,8 @@
       },
       "Efarming_Sustainability.Core/1.0.0": {
         "dependencies": {
-          "EntityFramework": "6.5.1"
+          "EntityFramework": "6.5.1",
+          "sqlite-net-pcl": "1.9.172"
         },
         "runtime": {
           "Efarming_Sustainability.Core.dll": {

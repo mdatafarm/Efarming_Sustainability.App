@@ -150,7 +150,6 @@ namespace Efarming_Sustainability.App.Models_View
             SelectedFarm = farm ?? throw new ArgumentNullException(nameof(farm));
             EditFincaCommand = new Command(async () => await SaveFarmAsync());
             GetLocationCommand = new Command(async () => await _getLocation());
-            // Iniciamos la carga asincrónica sin bloquear el constructor
             _ = InitializeAsync();
         }
 
