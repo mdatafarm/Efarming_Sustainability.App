@@ -17,25 +17,25 @@ namespace Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar
         {
         }
 
-        public async Task<Productivity> GetProductivitybyId(Guid Id)
+        public async Task<List<Productivity>> GetProductivitybyId(Guid Id)
         {
             try
             {
                 var api = new ConsumoApi(_baseUrl);
-                string endpoint = $"GetProductivity?FarmId={Id}";
+                string endpoint = $"getProductivity?FarmId={Id}";
 
                 if (Id == Guid.Empty)
                 {
                     throw new ArgumentException("El Id no puede ser vacío.", nameof(Id));
                 }
 
-                var result = await api.GetAsync<Productivity>(endpoint);
-                return result ?? new Productivity();
+                var result = await api.GetAsync<List<Productivity>>(endpoint);
+                return result ?? new List<Productivity>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error al obtener la productividad desde API: {ex.Message}");
-                return new Productivity();
+                return new List<Productivity>();
             }
 
         }

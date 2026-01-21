@@ -41,9 +41,5 @@ public partial class DashboardFUM : ContentPage
         }
     }
 
-    private async Task Back()
-    {
-        await Navigation.PopAsync();
-
-    }
+    
 }

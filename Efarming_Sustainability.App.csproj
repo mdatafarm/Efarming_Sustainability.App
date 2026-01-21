@@ -109,7 +109,10 @@
 	  <MauiXaml Update="Views\IndicatorsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Productivity\DashboardProductivity.xaml">
+	  <MauiXaml Update="Views\Productivities\DashboardProductivity.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Productivities\EditProductivity.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Shared\ActionCard.xaml">

@@ -1,3 +1,4 @@
+using Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar;
 using Efarming_Sustainability.App.Infraestructure.Repository.SQLite;
 using Efarming_Sustainability.Core.Models;
 using Efarming_Sustainability.Core.ModelView;
@@ -12,7 +13,9 @@ namespace Efarming_Sustainability.App.Models_View
     public class FarmsViewModel
     {
         private readonly FarmsRepository _farmsRepository;
-        private readonly FamilyUnitMembersRepository _familyUnitMembersRepository;
+        private readonly FamilyUnitMembersRepositoryAPI _familyUnitMembersRepositoryAPI;
+        private readonly ProductivityRepositoryAPI _productivityRepositoryAPI;
+
 
         private readonly IAlert _alert;
 
@@ -22,11 +25,13 @@ namespace Efarming_Sustainability.App.Models_View
 
 
 
-        public FarmsViewModel(FarmsRepository farmsRepository, IAlert alert, FamilyUnitMembersRepository fumRepository)
+        public FarmsViewModel(FarmsRepository farmsRepository, IAlert alert, 
+            FamilyUnitMembersRepositoryAPI fumRepositoryAPI, ProductivityRepositoryAPI productivityRepositoryAPI)
         {
 
             _farmsRepository = farmsRepository;
-            _familyUnitMembersRepository = fumRepository;
+            _familyUnitMembersRepositoryAPI = fumRepositoryAPI;
+            _productivityRepositoryAPI = productivityRepositoryAPI;
 
 
             _items = new ObservableCollection<Farm>();
@@ -114,7 +119,8 @@ namespace Efarming_Sustainability.App.Models_View
 
                 await _farmsRepository.SaveFarmsLocally(new List<Farm> { farm });
 
-                await _familyUnitMembersRepository.GetFUM(farm.Id);
+                await _familyUnitMembersRepositoryAPI.GetFUM(farm.Id);
+                await _productivityRepositoryAPI.GetProductivitybyId(farm.Id); 
 
                 await _alert.ShowAlert("Descarga", $"Finca '{farm.Name}' descargada.", "OK");
             }

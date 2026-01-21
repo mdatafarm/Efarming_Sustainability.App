@@ -51,7 +51,7 @@
                         <shared:ActionCard Text="Personas" Image="coffeefarmer.png"
                                       Command="{Binding OpenFUMCommand}"/>
                         <shared:ActionCard Text="Productividad" Image="coffeeprod.png"
-                                      Command="{Binding OpenProductividadCommand}"/>
+                                      Command="{Binding OpenProductivityCommand}"/>
                     </HorizontalStackLayout>
 
                     <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">

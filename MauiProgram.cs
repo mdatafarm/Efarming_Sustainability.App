@@ -42,6 +42,8 @@ namespace Efarming_Sustainability.App
             builder.Services.AddSingleton<FarmsRepositoryAPI>();
             builder.Services.AddSingleton<FamilyUnitMembersRepository>();
             builder.Services.AddSingleton<FamilyUnitMembersRepositoryAPI>();
+            builder.Services.AddSingleton<ProductivityRepository>();
+            builder.Services.AddSingleton<ProductivityRepositoryAPI>();
 
 
 
@@ -59,6 +61,10 @@ namespace Efarming_Sustainability.App
             builder.Services.AddSingleton<MunicipalityViewModel>();
             builder.Services.AddSingleton<VillageViewModel>();
             builder.Services.AddSingleton<FUMMenuViewModel>();
+            builder.Services.AddSingleton<FamilyUnitMembersViewModel>();
+            builder.Services.AddSingleton<EditFUMViewModel>();
+            builder.Services.AddSingleton<DashboardProductivityViewModel>();
+
 
 
 

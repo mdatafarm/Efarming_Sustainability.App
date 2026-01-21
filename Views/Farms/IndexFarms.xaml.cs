@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Efarming_Sustainability.App.Views.Farm;
+using Efarming_Sustainability.App.Infraestructure.Repository.Sincronizar;
 
 namespace Efarming_Sustainability.App.Views.Farms
 {
@@ -44,7 +45,8 @@ namespace Efarming_Sustainability.App.Views.Farms
             dptPicker.SelectedIndexChanged += DptPicker_SelectedIndexChanged;
             mcppicker.SelectedIndexChanged += McpPicker_SelectedIndexChanged;
 
-            _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository(),new FamilyUnitMembersRepository());
+            _viewModel = new FarmsViewModel(new FarmsRepository(), new AlertRepository(),
+                new FamilyUnitMembersRepositoryAPI(), new ProductivityRepositoryAPI());
             BindingContext = _viewModel;
 
             _alert = alert;

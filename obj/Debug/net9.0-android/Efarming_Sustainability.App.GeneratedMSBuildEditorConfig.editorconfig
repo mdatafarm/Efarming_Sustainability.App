@@ -107,11 +107,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.Ap
 build_metadata.AdditionalFiles.TargetPath = Views\IndicatorsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\IndicatorsPage.xaml
 
-[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Productivity/DashboardProductivity.xaml]
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Productivities/DashboardProductivity.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Productivity.DashboardProductivity.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\Productivity\DashboardProductivity.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\Productivity\DashboardProductivity.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Productivities.DashboardProductivity.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Productivities\DashboardProductivity.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Productivities\DashboardProductivity.xaml
+
+[C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Productivities/EditProductivity.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Efarming_Sustainability.App.Views.Productivities.EditProductivity.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Productivities\EditProductivity.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Productivities\EditProductivity.xaml
 
 [C:/Users/desarrollo/source/repos/Efarming_Sustainability.App/Views/Shared/ActionCard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

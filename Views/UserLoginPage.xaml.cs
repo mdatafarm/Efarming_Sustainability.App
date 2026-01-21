@@ -114,8 +114,6 @@ public partial class UserLoginPage : ContentPage
                 var CooperativesResponse = await _cooperativeRepositoryAPI.GetCooperatives();
                 await _cooperativeRepository.SaveCooperativesLocally(CooperativesResponse);
 
-
-
                 var DepartmentsResponse = await _departmentsRepositoryAPI.GetDepartments();
                 await _departmentsRepository.SaveDepartamentsLocally(DepartmentsResponse);
 
@@ -142,6 +140,8 @@ public partial class UserLoginPage : ContentPage
 
                 var FarmStatusResponse = await _farmStatusRepositoryAPI.GetFarmStatuses();
                 await _farmStatusRepository.SaveFarmStatusesLocally(FarmStatusResponse);
+
+
 
 
                 if (Shell.Current != null)
